@@ -1,4 +1,6 @@
 import React from 'react'
+import { Header, List } from 'semantic-ui-react'
+
 import educationData from './data/education.json'
 
 function Education() {
@@ -10,26 +12,29 @@ function Education() {
 
 function College(props) {
   let {data} = props
-  return <div>
-    <h2>{data.school}</h2>
-    <h3>{data.college}</h3>
-    <p>{data.gradeuationDate}</p>
-    <p>{data.degree}</p>
-    <p>GPA: {data.GPA}</p>
-    <ul>Honors:
-      {data.honors.map(honor => <li key='honor'>{honor}</li>)}
-    </ul>
-  </div>
-
+  return (
+    <div>
+      <Header as='h2'>{data.school}</Header>
+      <Header as='h3'>{data.college}</Header>
+      <p>{data.gradeuationDate}</p>
+      <p>{data.degree}</p>
+      <p>GPA: {data.GPA}</p>
+      <List>Honors:
+        {data.honors.map(honor => <List.Item key='honor'>{honor}</List.Item>)}
+      </List>
+    </div>
+  )
 }
 
 function HighSchool(props) {
   let {data} = props
-  return <div>
-    <h2>{data.school}</h2>
-    <p>{data.gradeuationDate}</p>
-    <p>{data.degree}</p>
-  </div>
+  return (
+    <div>
+      <Header as='h2'>{data.school}</Header>
+      <p>{data.gradeuationDate}</p>
+      <p>{data.degree}</p>
+    </div>
+  )
 }
 
 export default Education

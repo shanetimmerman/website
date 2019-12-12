@@ -1,5 +1,6 @@
 import jobData from './data/jobs.json'
 import React from 'react'
+import { Header, List } from 'semantic-ui-react'
 
 function Jobs() {
   return <div>
@@ -11,8 +12,8 @@ function Jobs() {
 function Job(props) {
   let { data } = props
   return <div>
-    <h2>{data.company}</h2>
-    <h3>{data.location}</h3>
+    <Header as='h2'>{data.company}</Header>
+    <Header as='h3'>{data.location}</Header>
     <div>
       {data.roles.map(position => <Position key={position} data={position} />)}
     </div>
@@ -22,17 +23,19 @@ function Job(props) {
 function Position(props) {
   let { data } = props
   return <div>
-    <h4>{data.title}</h4>
-    <h5>{data.dates}</h5>
-    <ul>
+    <Header as='h4'>{data.title}</Header>
+    <Header as='h5'>{data.dates}</Header>
+    <List>
       {data.bullets.map(bullet => <Bullet key={bullet} data={bullet}/>)}
-    </ul>
+    </List>
   </div>
 }
 
 function Bullet(props) {
   let { data } = props
-  return <li>{data}</li>
+  return (
+    <List.Item>{data}</List.Item>
+  )
 }
 
 export default Jobs
