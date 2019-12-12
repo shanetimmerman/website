@@ -1,0 +1,54 @@
+[
+  {
+    "company": "Wayfair",
+    "location": "Boston, MA",
+    "roles": [
+      {
+        "title": "Software Engineer Coop",
+        "dates": "January 2019 — August 2019",
+        "bullets": [
+          "Developer for scalable distributed web scraping platform to gather and clean competitor product and catalog information built off the Scrapy framework",
+          "Built spiders and spider middlewares to crawl web pages, APIs, and sitemaps for over a dozen competitors",
+          "Prototyped a Flask and React web app to allow stakeholders to monitor spiders and control crawling schedules"
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Northeaster College of Computer & Information Science",
+    "location": "Boston, MA",
+    "roles": [
+      {
+        "title": "Algorithms & Data Structures TA",
+        "dates": "September 2018 — December 2018",
+        "bullets": [
+          "Lead office hours and recitations on how common algorithms and data structures work and how to design and reason about algorithms",
+          "Graded homework, assessments, and algorithm implementations in python"
+        ]
+      },
+      {
+        "title": "Fundamentals of Computer Science Tutor",
+        "dates": "September 2017 — December 2017",
+        "bullets": [
+          "Lead labs and office ours introducing principles of program design",
+          "Grading homework modules in Racket, tests, and quizzes"
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Fluid-Screen",
+    "location": "Cambridge, MA",
+    "roles": [
+      {
+        "title": "Software Engineer Coop",
+        "dates": "January 2018 — August 2018",
+        "bullets": [
+          "Fullstack developer for Kivy desktop application allowing researchers to configure, run, and analyze lab experiments",
+          "Worked with OpenCV computer vision pipeline for analyzing bacterial motion",
+          "Developed hardware management API to coordinate various flow systems, high precision cameras, function generators, and oscilloscopes"
+        ]
+      }
+    ]
+  }
+]

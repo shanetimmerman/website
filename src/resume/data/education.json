@@ -1,0 +1,19 @@
+{
+  "college": {
+    "school": "Northeastern University",
+    "college": "Khoury College",
+    "degree": "Candidate for a Bachelor of Science in Computer Science & Biology",
+    "graduationDate": "Sept. 2016—Dec. 2020",
+    "GPA": "3.9/4.0",
+    "honors":
+      [
+        "NortheasternHonors Program",
+        "Dean’s List"
+      ]
+  },
+  "highschool": {
+    "school": "Westwood High School",
+    "graduationDate": "May 2016",
+    "degree": "High School Diploma"
+  }
+}

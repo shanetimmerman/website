@@ -1,0 +1,47 @@
+[
+  {
+    "domain": "Languages",
+    "proficient": [
+      "Python",
+      "Java", 
+      "Elixir"
+    ],
+    "familiar": [
+      "JavaScript",
+      "Perl",
+      "Scala" 
+    ]
+  },
+  {
+    "domain": "Languages",
+    "skills": [
+      "mssql",
+      "MySQL",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "domain": "Frameworks",
+    "skills": [
+      "Flask",
+      "React",
+      "Phoenix",
+      "SpringBoot",
+      "Kivy"
+    ]
+  },
+  {
+    "domain": "Additional Skills",
+    "proficient": [
+      "MapReduce",
+      "Spark",
+      "AWS",
+      "Docker",
+      "Git"
+    ],
+    "familiar": [
+      "Kafka",
+      "Kubernetes"
+    ]
+  }
+]
