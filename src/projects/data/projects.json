@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Swim Web App",
+    "git": "https://github.com/shanetimmerman/swim_web_app",
+    "summary": "Web application for managing a swim league developed as a final project for CS 3200 Database Design. The project uses MySQL as its DBSM, and has a SpringBoot backend with a React and Bootstrap client.",
+    "image": "./my_sql_icon.jpg"
+  },
+  {
+    "title": "Netflix Recommendation through Apriori Frequency Itemset Mining",
+    "git": "https://github.com/shanetimmerman/apriori-frequent-itemset-mining",
+    "summary": "MapReduce program to do Frequent Itemset Mining on the 2009 Netflix prize data, using association rules as a proxy for movie recommendation, much like Youtube did in its early days.",
+    "image": "./netflix_icon.jpeg"
+  }
+]

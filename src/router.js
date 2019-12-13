@@ -12,9 +12,9 @@ import Home from './home/index.js'
 import Projects from './projects/index.js'
 
 let navBar = [
-  { name:'Home', as:Link, to:'/'},
-  { name:'Resume', as:Link, to:'/resume'},
-  { name:'Projects', as:Link, to:'/projects'},
+  { name:'Home', key:'home', as:Link, to:'/'},
+  { name:'Resume', key:'resume', as:Link, to:'/resume'},
+  { name:'Projects', key:'projects', as:Link, to:'/projects'},
 ]
 
 
