@@ -25,7 +25,7 @@ function Project(props) {
         </Grid.Column>
         <Grid.Column width={13}>
           <Header as='h2'>{data.title}</Header>
-          <a href={data.git}>Project Link</a>
+          <a href={data.git} target='_blank'>Project Link</a>
           <p>{data.summary}</p>
         </Grid.Column>
       </Grid>
