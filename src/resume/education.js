@@ -1,13 +1,20 @@
 import React from 'react'
-import { Header, List } from 'semantic-ui-react'
+import { Header, List, Segment } from 'semantic-ui-react'
 
 import educationData from './data/education.json'
 
 function Education() {
-  return <div>
-    <College data={educationData.college} />
-    <HighSchool data={educationData.highschool} />
-  </div>
+  return (
+    <div>
+      <Header textAlign='center' as='h2'>Education</Header>
+      <Segment raised>
+        <College data={educationData.college} />
+      </Segment>
+      <Segment raised>
+        <HighSchool data={educationData.highschool} />
+      </Segment>
+    </div>
+  )
 }
 
 function College(props) {
@@ -16,7 +23,7 @@ function College(props) {
     <div>
       <Header as='h2'>{data.school}</Header>
       <Header as='h3'>{data.college}</Header>
-      <p>{data.gradeuationDate}</p>
+      <p>{data.graduationDate}</p>
       <p>{data.degree}</p>
       <p>GPA: {data.GPA}</p>
       <List>Honors:
@@ -31,7 +38,7 @@ function HighSchool(props) {
   return (
     <div>
       <Header as='h2'>{data.school}</Header>
-      <p>{data.gradeuationDate}</p>
+      <p>{data.graduationDate}</p>
       <p>{data.degree}</p>
     </div>
   )

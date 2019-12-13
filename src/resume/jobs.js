@@ -1,9 +1,10 @@
 import jobData from './data/jobs.json'
 import React from 'react'
-import { Header, List } from 'semantic-ui-react'
+import { Header, List, Segment } from 'semantic-ui-react'
 
 function Jobs() {
   return <div>
+    <Header textAlign='center' as='h2'>Work Experience</Header>
     {jobData.map(job => <Job key={job} data={job} />)}
   </div>
 
@@ -11,13 +12,13 @@ function Jobs() {
 
 function Job(props) {
   let { data } = props
-  return <div>
+  return <Segment raised>
     <Header as='h2'>{data.company}</Header>
     <Header as='h3'>{data.location}</Header>
     <div>
       {data.roles.map(position => <Position key={position} data={position} />)}
     </div>
-  </div>
+  </Segment>
 }
 
 function Position(props) {

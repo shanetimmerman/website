@@ -1,10 +1,15 @@
 import React from 'react'
+import { Header, Segment } from 'semantic-ui-react'
+
 import skillData from './data/skills.json'
 
 function Skills() {
-  return <div>
+  return (
+    <div>
+      <Header textAlign='center' as='h2'>Skills</Header>
       {skillData.map(domain => <Domain key={domain} data={domain} />)}
     </div>
+  )
 }
 
 function Domain(props) {
@@ -20,10 +25,13 @@ function Domain(props) {
         <p>{data.skills.join(', ')}</p>
       </div>
   }
-  return <div>
-    <h2>{data.domain}</h2>
-    {skills}
-  </div>
+
+  return (
+    <Segment rasied>
+      <Header as='h3'>{data.domain}</Header>
+      {skills}
+    </Segment>
+  )
 }
 
 
