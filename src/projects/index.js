@@ -16,7 +16,6 @@ function Projects() {
 
 function Project(props) {
   let {data} = props
-  console.log(data.image)
   return (
     <Segment raised>
       <Grid columns={2}>
@@ -25,7 +24,7 @@ function Project(props) {
         </Grid.Column>
         <Grid.Column width={13}>
           <Header as='h2'>{data.title}</Header>
-          <a href={data.git} target='_blank'>Project Link</a>
+          <a href={data.git} target='_blank' rel='noopener noreferrer'>Project Link</a>
           <p>{data.summary}</p>
         </Grid.Column>
       </Grid>
