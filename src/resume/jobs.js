@@ -26,7 +26,7 @@ function Position(props) {
   return <div>
     <Header as='h4'>{data.title}</Header>
     <Header as='h5'>{data.dates}</Header>
-    <List>
+    <List bulleted>
       {data.bullets.map(bullet => <Bullet key={bullet} data={bullet}/>)}
     </List>
   </div>
