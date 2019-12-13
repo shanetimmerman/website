@@ -12,6 +12,7 @@ function Skills() {
   )
 }
 
+// TODO: CHANGE TO ITEMS
 function Domain(props) {
   let {data} = props
   let skills

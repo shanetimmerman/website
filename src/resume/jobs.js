@@ -1,6 +1,6 @@
 import jobData from './data/jobs.json'
 import React from 'react'
-import { Grid, Header, Image, List, Segment } from 'semantic-ui-react'
+import { Header, Item, List, Segment } from 'semantic-ui-react'
 
 let assets = require.context('./assets', true)
 
@@ -12,21 +12,20 @@ function Jobs() {
 
 }
 
+// TODO: CHANGE TO ITEMS
 function Job(props) {
   let { data } = props
   return <Segment raised>
-    <Grid>
-      <Grid.Column width={3}>
-        <Image src={assets(data.image)} size='medium' circular bordered />
-      </Grid.Column>
-      <Grid.Column width={13}>
-        <Header as='h2'>{data.company}</Header>
-      </Grid.Column>
-    </Grid>
-    <Header as='h3'>{data.location}</Header>
-    <div>
-      {data.roles.map(position => <Position key={position.title} data={position} />)}
-    </div>
+    <Item>
+      <Item.Image src={assets(data.image)} size='medium' circular bordered />
+      <Item.Content>
+        <Item.Header as='h2'>{data.company}</Item.Header>
+        <Item.Meta as='h3'>{data.location}</Item.Meta>
+        <Item.Content>
+          {data.roles.map(position => <Position key={position.title} data={position} />)}
+        </Item.Content>
+      </Item.Content>
+    </Item>
   </Segment>
 }
 

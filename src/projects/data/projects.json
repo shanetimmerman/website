@@ -10,5 +10,11 @@
     "git": "https://github.com/shanetimmerman/apriori-frequent-itemset-mining",
     "summary": "MapReduce program to do Frequent Itemset Mining on the 2009 Netflix prize data, using association rules as a proxy for movie recommendation, much like Youtube did in its early days.",
     "image": "./netflix_icon.jpeg"
+  },
+  {
+    "title": "Studor",
+    "git": "https://github.com/shanetimmerman/studor",
+    "summary": "Pheonix and React Web application for tutoring services. Allows tutots to post and hold tutoring sessions with a shared white board, chat, and video call, and students to register and pay for tutoring sessions.",
+    "image": "./stutor_icon.jpg"
   }
 ]

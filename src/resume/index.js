@@ -19,6 +19,7 @@ function Resume() {
           <CourseWork />
         </Grid.Column>
         <Grid.Column width={4}>
+          {/* TODO MAYBE MAKE SKILLS STICKY */}
           <Skills />
         </Grid.Column>
       </Grid>

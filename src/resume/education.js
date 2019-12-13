@@ -17,6 +17,7 @@ function Education() {
   )
 }
 
+// TODO: CHANGE TO ITEMS
 function College(props) {
   let {data} = props
   return (
