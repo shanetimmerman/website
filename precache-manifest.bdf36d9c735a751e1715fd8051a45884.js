@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "043166a4b8a4ff9fba7e4416640396c5",
+    "revision": "a01fb37d12e666753f60ed75e915db57",
     "url": "/website/index.html"
   },
   {
-    "revision": "139cc31046dfd524b68c",
+    "revision": "a889da72ddc041022a74",
     "url": "/website/static/css/2.8afac94e.chunk.css"
   },
   {
-    "revision": "10d2a3e05b3aef4e98b9",
+    "revision": "e6cead2db2e02be5cc43",
     "url": "/website/static/css/main.fb5e79b7.chunk.css"
   },
   {
-    "revision": "139cc31046dfd524b68c",
-    "url": "/website/static/js/2.59d8a18a.chunk.js"
+    "revision": "a889da72ddc041022a74",
+    "url": "/website/static/js/2.6b422d6c.chunk.js"
   },
   {
     "revision": "3d9880ee0da2a100dc4a6223e0aed39a",
-    "url": "/website/static/js/2.59d8a18a.chunk.js.LICENSE"
+    "url": "/website/static/js/2.6b422d6c.chunk.js.LICENSE"
   },
   {
-    "revision": "10d2a3e05b3aef4e98b9",
-    "url": "/website/static/js/main.d1a85455.chunk.js"
+    "revision": "e6cead2db2e02be5cc43",
+    "url": "/website/static/js/main.b4c55454.chunk.js"
   },
   {
     "revision": "c4eb8c5431e375405af8",
@@ -74,6 +74,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
     "url": "/website/static/media/logo.5d5d9eef.svg"
+  },
+  {
+    "revision": "5fc2eb804f1b1364d5e5549e07819e09",
+    "url": "/website/static/media/my_sql_icon.5fc2eb80.jpg"
+  },
+  {
+    "revision": "c2885616f3b521ae055103583d4761f4",
+    "url": "/website/static/media/netflix_icon.c2885616.jpeg"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
