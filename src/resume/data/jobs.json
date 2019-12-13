@@ -2,6 +2,7 @@
   {
     "company": "Wayfair",
     "location": "Boston, MA",
+    "image": "./wayfair_icon.jpg",
     "roles": [
       {
         "title": "Software Engineer Coop",
@@ -15,8 +16,9 @@
     ]
   },
   {
-    "company": "Northeaster College of Computer & Information Science",
+    "company": "Northeaster Khoury College of Computer Science",
     "location": "Boston, MA",
+    "image": "./khoury_icon.jpg",
     "roles": [
       {
         "title": "Algorithms & Data Structures TA",
@@ -39,6 +41,7 @@
   {
     "company": "Fluid-Screen",
     "location": "Cambridge, MA",
+    "image": "./fluid_screen_logo.png",
     "roles": [
       {
         "title": "Software Engineer Coop",

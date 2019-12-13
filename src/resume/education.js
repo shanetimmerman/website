@@ -27,7 +27,7 @@ function College(props) {
       <p>{data.degree}</p>
       <p>GPA: {data.GPA}</p>
       <List>Honors:
-        {data.honors.map(honor => <List.Item key='honor'>{honor}</List.Item>)}
+        {data.honors.map(honor => <List.Item key={honor}>{honor}</List.Item>)}
       </List>
     </div>
   )

@@ -3,6 +3,7 @@ import React from 'react';
 import {Container, Grid, Header, Image, Segment} from 'semantic-ui-react'
 
 import projectData from './data/projects.json'
+
 let assets = require.context('./assets', true)
 
 function Projects() {

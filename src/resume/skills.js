@@ -7,7 +7,7 @@ function Skills() {
   return (
     <div>
       <Header textAlign='center' as='h2'>Skills</Header>
-      {skillData.map(domain => <Domain key={domain} data={domain} />)}
+      {skillData.map(domain => <Domain key={domain.domain} data={domain} />)}
     </div>
   )
 }
@@ -27,7 +27,7 @@ function Domain(props) {
   }
 
   return (
-    <Segment rasied>
+    <Segment raised>
       <Header as='h3'>{data.domain}</Header>
       {skills}
     </Segment>

@@ -24,10 +24,10 @@ function WebRouter() {
       <div>
         <Menu items={navBar} />
         <Switch>
-          <Route path="/Resume">
+          <Route path="/resume">
             <Resume />
           </Route>
-          <Route path="/Projects">
+          <Route path="/projects">
             <Projects />
           </Route>
           <Route path="/">

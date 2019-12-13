@@ -1,11 +1,13 @@
 import jobData from './data/jobs.json'
 import React from 'react'
-import { Header, List, Segment } from 'semantic-ui-react'
+import { Grid, Header, Image, List, Segment } from 'semantic-ui-react'
+
+let assets = require.context('./assets', true)
 
 function Jobs() {
   return <div>
     <Header textAlign='center' as='h2'>Work Experience</Header>
-    {jobData.map(job => <Job key={job} data={job} />)}
+    {jobData.map(job => <Job key={job.company} data={job} />)}
   </div>
 
 }
@@ -13,10 +15,17 @@ function Jobs() {
 function Job(props) {
   let { data } = props
   return <Segment raised>
-    <Header as='h2'>{data.company}</Header>
+    <Grid>
+      <Grid.Column width={3}>
+        <Image src={assets(data.image)} size='medium' circular bordered />
+      </Grid.Column>
+      <Grid.Column width={13}>
+        <Header as='h2'>{data.company}</Header>
+      </Grid.Column>
+    </Grid>
     <Header as='h3'>{data.location}</Header>
     <div>
-      {data.roles.map(position => <Position key={position} data={position} />)}
+      {data.roles.map(position => <Position key={position.title} data={position} />)}
     </div>
   </Segment>
 }
