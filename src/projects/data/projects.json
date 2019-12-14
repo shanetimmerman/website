@@ -1,20 +1,38 @@
 [
   {
-    "title": "Swim Web App",
-    "git": "https://github.com/shanetimmerman/swim_web_app",
-    "summary": "Web application for managing a swim league developed as a final project for CS 3200 Database Design. The project uses MySQL as its DBSM, and has a SpringBoot backend with a React and Bootstrap client.",
-    "image": "./my_sql_icon.jpg"
-  },
-  {
     "title": "Netflix Recommendation through Apriori Frequency Itemset Mining",
     "git": "https://github.com/shanetimmerman/apriori-frequent-itemset-mining",
+    "dates": "2019",
     "summary": "MapReduce program to do Frequent Itemset Mining on the 2009 Netflix prize data, using association rules as a proxy for movie recommendation, much like Youtube did in its early days.",
     "image": "./netflix_icon.jpeg"
   },
   {
     "title": "Studor",
     "git": "https://github.com/shanetimmerman/studor",
+    "dates": "2018",
     "summary": "Pheonix and React Web application for tutoring services. Allows tutots to post and hold tutoring sessions with a shared white board, chat, and video call, and students to register and pay for tutoring sessions.",
     "image": "./stutor_icon.jpg"
+  },
+  {
+    "title": "Weather Driven Traffic Forcasting",
+    "git": "https://github.com/jennder/DCRNN_PyTorch/tree/weather_model",
+    "dates": "2019",
+    "summary": "Final project for introduction to computer science research. Aimed to extend the ",
+    "image": "./dcrnn_icon.png",
+    "abandoned": true
+  },
+  {
+    "title": "Santorini",
+    "git": "https://github.com/jennder/DCRNN_PyTorch/tree/weather_model",
+    "date": "2018",
+    "summary": "Final project for introduction to computer science research. Aimed to extend the ",
+    "image": "./santorini_box_art.png"
+  },
+  {
+    "title": "Swim Web App",
+    "git": "https://github.com/shanetimmerman/swim_web_app",
+    "dates": "2019",
+    "summary": "Web application for managing a swim league developed as a final project for CS 3200 Database Design. The project uses MySQL as its DBSM, and has a SpringBoot backend with a React and Bootstrap client.",
+    "image": "./my_sql_icon.jpg"
   }
 ]
