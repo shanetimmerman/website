@@ -27,10 +27,10 @@ function Project(props) {
   return (
     <Segment raised>
       <Item>
-        <Item.Image src={assets(data.image)}size='medium' circular bordered />
+        <Item.Image src={assets(data.image)} size='medium' circular bordered />
         <Item.Header as='h2'>{data.title} {abandoned}</Item.Header>
         <Item.Meta href={data.git} target='_blank' rel='noopener noreferrer'>Project Link</Item.Meta>
-        <Item.Description>{data.summary}</Item.Description>
+        <Item.Description content={data.summary}/>
         <Container textAlign='center'>
           <Header color='grey' as='h5'>- Click to find out more - </Header>
         </Container>
