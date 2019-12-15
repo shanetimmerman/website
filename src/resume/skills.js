@@ -25,13 +25,13 @@ function Domain(props) {
         <Item.Content>
           <Header as='h4'><i>Proficient with</i></Header>
           <List>
-            {data.proficient.map(skill => <List.Item>{skill}</List.Item>)}
+            {data.proficient.map(skill => <List.Item key={skill}>{skill}</List.Item>)}
           </List>
         </Item.Content>
         <Item.Content>
           <Header as='h4'><i>Proficient with</i></Header>
           <List>
-            {data.familiar.map(skill => <List.Item>{skill}</List.Item>)}
+            {data.familiar.map(skill => <List.Item key={skill}>{skill}</List.Item>)}
           </List>
         </Item.Content>
       </div>
@@ -41,7 +41,7 @@ function Domain(props) {
       <div>
         <Item.Content>
           <List>
-            {data.skills.map(skill => <List.Item>{skill}</List.Item>)}
+            {data.skills.map(skill => <List.Item key={skill}>{skill}</List.Item>)}
           </List>
         </Item.Content>
       </div>
