@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, List, Segment } from 'semantic-ui-react'
+import { Header, List, Segment, Item } from 'semantic-ui-react'
 
 import educationData from './data/education.json'
 
@@ -7,12 +7,14 @@ function Education() {
   return (
     <div>
       <Header textAlign='center' as='h2'>Education</Header>
-      <Segment raised>
-        <College data={educationData.college} />
-      </Segment>
-      <Segment raised>
-        <HighSchool data={educationData.highschool} />
-      </Segment>
+      <Item.Group>
+        <Segment raised>
+          <College data={educationData.college} />
+        </Segment>
+        <Segment raised>
+          <HighSchool data={educationData.highschool} />
+        </Segment>
+      </Item.Group>
     </div>
   )
 }

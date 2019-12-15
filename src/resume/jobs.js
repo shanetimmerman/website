@@ -7,7 +7,9 @@ let assets = require.context('./assets', true)
 function Jobs() {
   return <div>
     <Header textAlign='center' as='h2'>Work Experience</Header>
-    {jobData.map(job => <Job key={job.company} data={job} />)}
+    <Item.Group>
+      {jobData.map(job => <Job key={job.company} data={job} />)}
+    </Item.Group>
   </div>
 
 }
