@@ -23,7 +23,7 @@ function Projects() {
 // MAYBE USE MODALS TO READ MORE
 function Project(props) {
   let {data} = props
-  let abandoned = data.abandoned? <Label as='h2'>Abandoned</Label> : ""
+  let abandoned = data.abandoned? <Label>Abandoned</Label> : ""
 
   let content = (
     <Segment raised>
