@@ -12,6 +12,7 @@
     "@testing-library/react": "^9.3.3",
     "@testing-library/user-event": "^7.1.2",
     "gh-pages": "^2.1.1",
+    "gulp": "^4.0.2",
     "lodash": "^4.17.15",
     "pure-react-carousel": "^1.24.1",
     "react": "^16.12.0",
