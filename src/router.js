@@ -22,7 +22,7 @@ let navBar = [
 
 function WebRouter() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Menu items={navBar} />
         <Switch>
