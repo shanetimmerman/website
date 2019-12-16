@@ -23,7 +23,12 @@ function Projects() {
 // MAYBE USE MODALS TO READ MORE
 function Project(props) {
   let {data} = props
-  let abandoned = data.abandoned? <Label>Abandoned</Label> : ""
+  let abandoned = data.abandoned ? <Label>Abandoned</Label> : ""
+  let clickToSeeMore = data.more ? (
+    <Container textAlign='center'>
+      <Header color='grey' as='h5'>- Click to find out more - </Header>
+    </Container>
+  ) : ""
 
   let content = (
     <Segment raised>
@@ -32,9 +37,7 @@ function Project(props) {
         <Item.Header as='h2'>{data.title} {abandoned}</Item.Header>
         <Item.Meta href={data.git} target='_blank' rel='noopener noreferrer'>Project Link</Item.Meta>
         <Item.Description content={data.summary}/>
-        <Container textAlign='center'>
-          <Header color='grey' as='h5'>- Click to find out more - </Header>
-        </Container>
+        { clickToSeeMore }
       </Item>
     </Segment>
   )

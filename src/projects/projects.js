@@ -1,6 +1,7 @@
 import React from 'react'
 
 import FrequencyItemset from './frequent_itemset'
+import Stutor from './stutor'
 
 export default [
   {
@@ -17,6 +18,7 @@ export default [
     dates: "2018",
     summary: "Pheonix and React Web application for tutoring services. Allows tutots to post and hold tutoring sessions with a shared white board, chat, and video call, and students to register and pay for tutoring sessions.",
     image: "./stutor_icon.jpg",
+    more: <Stutor />
   },
   {
     title: "Weather Driven Traffic Forcasting",
