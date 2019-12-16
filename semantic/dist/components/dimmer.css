@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI undefined - Dimmer
+ * # Semantic UI 2.4.2 - Dimmer
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -34,7 +34,7 @@
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-transition: background-color 0.5s linear;
-  transition: background-color 0.5s linear;
+          transition: background-color 0.5s linear;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -46,7 +46,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   will-change: opacity;
@@ -56,7 +55,6 @@
 /* Dimmer Content */
 .ui.dimmer > .content {
   -webkit-user-select: text;
-     -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
   color: #FFFFFF;
@@ -170,10 +168,8 @@ body.dimmable > .dimmer {
 .blurring.dimmable > :not(.dimmer) {
   -webkit-filter: blur(0px) grayscale(0);
           filter: blur(0px) grayscale(0);
-  -webkit-transition: 800ms -webkit-filter ease;
-  transition: 800ms -webkit-filter ease;
-  transition: 800ms filter ease;
-  transition: 800ms filter ease, 800ms -webkit-filter ease;
+  -webkit-transition: 800ms -webkit-filter ease, 800ms filter ease;
+          transition: 800ms filter ease;
 }
 .blurring.dimmed.dimmable > :not(.dimmer) {
   -webkit-filter: blur(5px) grayscale(0.7);
