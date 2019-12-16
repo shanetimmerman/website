@@ -15,7 +15,9 @@ function Projects() {
         some of it's wavy, all of it is made with love and blood and sweat and 
         tears. The source code can be found in my Github!
       </Container>
-      {projectData.map(project => <Project key={project.title} data={project} />)}
+      <Item.Group>
+        {projectData.map(project => <Project key={project.title} data={project} />)}
+      </Item.Group>
     </Container>
   );
 }
@@ -32,12 +34,14 @@ function Project(props) {
 
   let content = (
     <Segment raised>
-      <Item>
+      <Item raised>
         <Item.Image src={assets(data.image)} size='medium' circular bordered />
-        <Item.Header as='h2'>{data.title} {abandoned}</Item.Header>
-        <Item.Meta href={data.git} target='_blank' rel='noopener noreferrer'>Project Link</Item.Meta>
-        <Item.Description content={data.summary}/>
-        { clickToSeeMore }
+        <Item.Content>
+          <Item.Header as='h2'>{data.title} {abandoned}</Item.Header>
+          <Item.Meta href={data.git} target='_blank' rel='noopener noreferrer'>Project Link</Item.Meta>
+          <Item.Description content={data.summary}/>
+          { clickToSeeMore }
+        </Item.Content>
       </Item>
     </Segment>
   )

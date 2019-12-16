@@ -2,6 +2,7 @@ import React from 'react'
 
 import FrequencyItemset from './frequent_itemset'
 import Stutor from './stutor'
+import TrafficForcasting from './traffic_forcasting'
 
 export default [
   {
@@ -27,6 +28,7 @@ export default [
     summary: "Final project for introduction to computer science research. Aimed to extend the Diffuse Concurrent Neural Network from (Li et al. 2017) to include weather prediciton data to challange the prior that traffic patterns are a closed system.<br/>Project incomplete within the allotted course time.",
     image: "./dcrnn_icon.png",
     abandoned: true,
+    more: <TrafficForcasting />
   },
   {
     title: "Santorini",

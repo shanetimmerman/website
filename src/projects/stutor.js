@@ -1,5 +1,5 @@
 import React from 'react'
-import { Item, Container, List, Table, Header, Image, Segment } from 'semantic-ui-react'
+import { Container, Image, } from 'semantic-ui-react'
 
 import stutorHome from './assets/stutor_images/stutorhome.png'
 import stutorBoard from './assets/stutor_images/stutorboard.png'
