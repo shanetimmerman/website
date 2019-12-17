@@ -37,7 +37,6 @@ function Project(props) {
       <Item.Image src={assets(data.image)} size='small' circular bordered floated='left'/>
       <Item.Content>
         <Item.Header as='h2'>{data.title} {abandoned}</Item.Header>
-        <Item.Meta href={data.git} target='_blank' rel='noopener noreferrer'>Project Link</Item.Meta>
         <Item.Description content={data.summary}/>
         { clickToSeeMore }
       </Item.Content>
