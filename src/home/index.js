@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { Container, Header, Grid, Image, List, Segment } from 'semantic-ui-react';
+import { Container, Header, Grid, Image, List, Segment, Icon } from 'semantic-ui-react';
 
 import profilePhoto from './assets/profile_photo.jpeg'
 
@@ -19,6 +19,16 @@ function Home() {
                 Mainly I'm interested in music, film, photography and moleculuar 
                 and cellular biology!
               </p>
+              <Header>
+                <Header.Content href='https://www.linkedin.com/in/shanetimmerman/' target='_blank' rel='noopener noreferrer' as='a'>
+                  <Icon name='linkedin' />
+                  shanetimmerman
+                </Header.Content>
+                <Header.Content href='https://github.com/shanetimmerman' target='_blank' rel='noopener noreferrer' as='a'>
+                  <Icon name='github square' />
+                  shanetimmerman
+                </Header.Content>
+              </Header>
             </Grid.Column>
             <Grid.Column>
               <p>
