@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0aef0a08340fa7ad2e971adf6c6fc52f",
+    "revision": "19b6e02af18d5855999900b39859a79a",
     "url": "/index.html"
   },
   {
-    "revision": "0d732443b0e7a793ccb7",
-    "url": "/static/css/2.bd0670fd.chunk.css"
+    "revision": "69e9f4e3da0ce5951326",
+    "url": "/static/css/2.decc32fb.chunk.css"
   },
   {
-    "revision": "bcb870ba253cdd3a7ee8",
+    "revision": "588deb08e675bb310d89",
     "url": "/static/css/main.fb5e79b7.chunk.css"
   },
   {
-    "revision": "0d732443b0e7a793ccb7",
-    "url": "/static/js/2.192a8525.chunk.js"
+    "revision": "69e9f4e3da0ce5951326",
+    "url": "/static/js/2.a0665c93.chunk.js"
   },
   {
     "revision": "0d21a76ca5175233de357ea2688d7eb8",
-    "url": "/static/js/2.192a8525.chunk.js.LICENSE"
+    "url": "/static/js/2.a0665c93.chunk.js.LICENSE"
   },
   {
-    "revision": "bcb870ba253cdd3a7ee8",
-    "url": "/static/js/main.861bae9f.chunk.js"
+    "revision": "588deb08e675bb310d89",
+    "url": "/static/js/main.6b6d8a24.chunk.js"
   },
   {
     "revision": "a796a236ee8470d38315",
@@ -96,6 +96,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/netflix_icon.c2885616.jpeg"
   },
   {
+    "revision": "b3e35d59da415ec6dde0f974b7d50be2",
+    "url": "/static/media/original_flow.b3e35d59.png"
+  },
+  {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
     "url": "/static/media/outline-icons.701ae6ab.eot"
   },
@@ -158,6 +162,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5dd4dca1a0b0d9ce6336cae7cf27ce77",
     "url": "/static/media/stutorsessions.5dd4dca1.png"
+  },
+  {
+    "revision": "2720773a04c51499d15b2dbb41d32398",
+    "url": "/static/media/updated_flow.2720773a.png"
   },
   {
     "revision": "41369ef3b328f5afee8e18caf9229078",
