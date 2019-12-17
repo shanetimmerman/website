@@ -27,15 +27,15 @@ function Project(props) {
   let {data} = props
   let abandoned = data.abandoned ? <Label>Abandoned</Label> : ""
   let clickToSeeMore = data.more ? (
-    <Container textAlign='center'>
+    <Segment basic textAlign='center'>
       <Header color='grey' as='h5'>- Click to find out more - </Header>
-    </Container>
+    </Segment>
   ) : ""
 
   let content = (
-    <Segment raised>
+    <Segment raised clearing>
       <Item raised>
-        <Item.Image src={assets(data.image)} size='medium' circular bordered />
+        <Item.Image src={assets(data.image)} size='small' circular bordered floated='left'/>
         <Item.Content>
           <Item.Header as='h2'>{data.title} {abandoned}</Item.Header>
           <Item.Meta href={data.git} target='_blank' rel='noopener noreferrer'>Project Link</Item.Meta>
