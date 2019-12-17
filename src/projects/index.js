@@ -1,8 +1,9 @@
 import React from 'react';
 
-import {Container, Header, Item, Segment, Label, Modal} from 'semantic-ui-react'
+import { Container, Header, Item, Segment, Label, Modal, Image} from 'semantic-ui-react'
 
 import projectData from './projects'
+import gitLogo from './assets/git_logo.png'
 
 let assets = require.context('./assets', true)
 
@@ -33,43 +34,34 @@ function Project(props) {
   ) : ""
 
   let content = (
-    <Segment raised clearing>
-      <Item raised>
-        <Item.Image src={assets(data.image)} size='small' circular bordered floated='left'/>
-        <Item.Content>
-          <Item.Header as='h2'>{data.title} {abandoned}</Item.Header>
-          <Item.Meta href={data.git} target='_blank' rel='noopener noreferrer'>Project Link</Item.Meta>
-          <Item.Description content={data.summary}/>
-          { clickToSeeMore }
-        </Item.Content>
-      </Item>
-    </Segment>
+    <Item>
+      <Item.Image src={assets(data.image)} size='small' circular bordered floated='left'/>
+      <Item.Content>
+        <Item.Header as='h2'>{data.title} {abandoned}</Item.Header>
+        <Item.Meta href={data.git} target='_blank' rel='noopener noreferrer'>Project Link</Item.Meta>
+        <Item.Description content={data.summary}/>
+        { clickToSeeMore }
+      </Item.Content>
+    </Item>
   )
   
-  if (data.more) {
-    return (
-      <Modal 
-        trigger={content}
-        header={data.title}
-        content={data.more}
-      />
-    )
-  } else {
-    return content
-  }
-  // return (
-  //   <Segment raised>
-  //     <Item>
-  //       <Item.Image src={assets(data.image)} size='medium' circular bordered />
-  //       <Item.Header as='h2'>{data.title} {abandoned}</Item.Header>
-  //       <Item.Meta href={data.git} target='_blank' rel='noopener noreferrer'>Project Link</Item.Meta>
-  //       <Item.Description content={data.summary}/>
-  //       <Container textAlign='center'>
-  //         <Header color='grey' as='h5'>- Click to find out more - </Header>
-  //       </Container>
-  //     </Item>
-  //   </Segment>
-  // )
+  let item = data.more ? (
+    <Modal 
+          trigger={content}
+          header={data.title}
+          content={data.more}
+        />
+  ) : content
+
+  return (
+    <Segment raised clearing>
+      <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' image>
+        <Image src={ gitLogo } fluid />
+      </Label>
+      {item}
+    </Segment>
+  )
+
 }
 
 export default Projects;
