@@ -1,9 +1,8 @@
 import React from 'react';
 
-import { Container, Header, Item, Segment, Label, Modal, Image} from 'semantic-ui-react'
+import { Container, Header, Item, Segment, Label, Modal } from 'semantic-ui-react'
 
 import projectData from './projects'
-import gitLogo from './assets/git_logo.png'
 
 let assets = require.context('./assets', true)
 
@@ -55,9 +54,7 @@ function Project(props) {
 
   return (
     <Segment raised clearing>
-      <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' image>
-        <Image src={ gitLogo } fluid />
-      </Label>
+      <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
       {item}
     </Segment>
   )
