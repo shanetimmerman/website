@@ -21,37 +21,37 @@ function Domain(props) {
   let skills
   if ('proficient' in data) {
     skills = (
-      <div>
-        <Item.Content>
+      <Item.Content>
+        <Segment basic vertical>
           <Header as='h4'><i>Proficient with</i></Header>
           <List>
             {data.proficient.map(skill => <List.Item key={skill}>{skill}</List.Item>)}
           </List>
-        </Item.Content>
-        <Item.Content>
+        </Segment>
+        <Segment basic vertical>
           <Header as='h4'><i>Proficient with</i></Header>
           <List>
             {data.familiar.map(skill => <List.Item key={skill}>{skill}</List.Item>)}
           </List>
-        </Item.Content>
-      </div>
+        </Segment>
+      </Item.Content>
     )
   } else {
     skills = (
-      <div>
-        <Item.Content>
-          <List>
-            {data.skills.map(skill => <List.Item key={skill}>{skill}</List.Item>)}
-          </List>
-        </Item.Content>
-      </div>
+      <Item.Content>
+        <List>
+          {data.skills.map(skill => <List.Item key={skill}>{skill}</List.Item>)}
+        </List>
+      </Item.Content>
     )
   }
 
   return (
     <Item>
-      <Item.Header as='h3'>{data.domain}</Item.Header>
-      {skills}
+      <Segment basic>
+        <Item.Header as='h3'>{data.domain}</Item.Header>
+        {skills}
+      </Segment>
     </Item>
   )
 }
