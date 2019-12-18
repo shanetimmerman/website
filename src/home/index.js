@@ -28,6 +28,10 @@ function Home() {
                   <Icon name='github square' />
                   shanetimmerman
                 </Header.Content>
+                <Header.Content href='https://github.com/shanetimmerman' target='_blank' rel='noopener noreferrer' as='a'>
+                  <Icon name='github square' />
+                  shanetimmerman
+                </Header.Content>
               </Header>
             </Grid.Column>
             <Grid.Column>
