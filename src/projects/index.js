@@ -23,7 +23,6 @@ function Projects() {
   );
 }
 
-// MAYBE USE MODALS TO READ MORE
 function Project(props) {
   let {data} = props
   let abandoned = data.abandoned ? <Label>Abandoned</Label> : ""
@@ -44,21 +43,21 @@ function Project(props) {
     </Item>
   )
   
-  let item = data.more ? (
-    <Modal 
+  return data.more ? (
+    <HoverRaisedSegment clearing>
+      <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
+      <Modal 
           trigger={content}
           header={data.title}
           content={data.more}
         />
-  ) : content
-
-  return (
-    <HoverRaisedSegment clearing>
-      <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
-      {item}
     </HoverRaisedSegment>
+  ) : (
+    <Segment clearing>
+      <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
+      {content}
+    </Segment>
   )
-
 }
 
 export default Projects;
