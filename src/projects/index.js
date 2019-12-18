@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Header, Item, Segment, Label, Modal } from 'semantic-ui-react'
 
 import projectData from './projects'
+import HoverRaisedSegment from '../components/HoverRaisedSegment'
 
 let assets = require.context('./assets', true)
 
@@ -52,10 +53,10 @@ function Project(props) {
   ) : content
 
   return (
-    <Segment raised clearing>
+    <HoverRaisedSegment clearing>
       <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
       {item}
-    </Segment>
+    </HoverRaisedSegment>
   )
 
 }
