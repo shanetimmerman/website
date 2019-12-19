@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.fb5e79b7.chunk.css",
-    "main.js": "/static/js/main.7869ef6b.chunk.js",
-    "main.js.map": "/static/js/main.7869ef6b.chunk.js.map",
+    "main.js": "/static/js/main.03910c57.chunk.js",
+    "main.js.map": "/static/js/main.03910c57.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.783779e9.js",
     "runtime-main.js.map": "/static/js/runtime-main.783779e9.js.map",
     "static/css/2.ad9d79d7.chunk.css": "/static/css/2.ad9d79d7.chunk.css",
-    "static/js/2.b486d2d2.chunk.js": "/static/js/2.b486d2d2.chunk.js",
-    "static/js/2.b486d2d2.chunk.js.map": "/static/js/2.b486d2d2.chunk.js.map",
+    "static/js/2.498d50a3.chunk.js": "/static/js/2.498d50a3.chunk.js",
+    "static/js/2.498d50a3.chunk.js.map": "/static/js/2.498d50a3.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1a01344cb35bc29e8f0e03239b681e04.js": "/precache-manifest.1a01344cb35bc29e8f0e03239b681e04.js",
+    "precache-manifest.8e86c498c1ab894355eef725860919e6.js": "/precache-manifest.8e86c498c1ab894355eef725860919e6.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.ad9d79d7.chunk.css.map": "/static/css/2.ad9d79d7.chunk.css.map",
     "static/css/main.fb5e79b7.chunk.css.map": "/static/css/main.fb5e79b7.chunk.css.map",
-    "static/js/2.b486d2d2.chunk.js.LICENSE": "/static/js/2.b486d2d2.chunk.js.LICENSE",
+    "static/js/2.498d50a3.chunk.js.LICENSE": "/static/js/2.498d50a3.chunk.js.LICENSE",
     "static/media/semantic.less": "/static/media/outline-icons.ef60a4f6.woff",
     "static/media/construction_bear.png": "/static/media/construction_bear.294601b1.png",
     "static/media/dcrnn_icon.png": "/static/media/dcrnn_icon.725623c9.png",
     "static/media/diagram.png": "/static/media/diagram.af5da53e.png",
+    "static/media/genius_icon.png": "/static/media/genius_icon.357a0d4a.png",
     "static/media/khoury_icon.jpg": "/static/media/khoury_icon.a080ed8d.jpg",
     "static/media/my_sql_icon.jpg": "/static/media/my_sql_icon.5fc2eb80.jpg",
     "static/media/netflix_icon.jpeg": "/static/media/netflix_icon.c2885616.jpeg",
@@ -39,8 +40,8 @@
   "entrypoints": [
     "static/js/runtime-main.783779e9.js",
     "static/css/2.ad9d79d7.chunk.css",
-    "static/js/2.b486d2d2.chunk.js",
+    "static/js/2.498d50a3.chunk.js",
     "static/css/main.fb5e79b7.chunk.css",
-    "static/js/main.7869ef6b.chunk.js"
+    "static/js/main.03910c57.chunk.js"
   ]
 }
