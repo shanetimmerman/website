@@ -6,6 +6,13 @@ import TrafficForcasting from './traffic_forcasting'
 
 export default [
   {
+    title: 'shanetimmerman.com',
+    git: 'https://github.com/shanetimmerman/website',
+    dates: '2019',
+    summary: 'I figured it was about time I make myself a webstite. Written in React and Semantic UI, this site provides me the ability to delve deeper into fron end development, as well as provide some interesting ways to display and visualize some results from previous projects. It also provides a platform for any future web-apps I develop, so look out for those!',
+    image: './shanetimmerman_icon.png',
+  },
+  {
     title: 'Netflix Recommendation through Apriori Frequency Itemset Mining',
     git: 'https://github.com/shanetimmerman/apriori-frequent-itemset-mining',
     dates: '2019',
@@ -17,7 +24,7 @@ export default [
     title: 'Studor',
     git: 'https://github.com/shanetimmerman/studor',
     dates: '2018',
-    summary: 'Pheonix and React Web application for tutoring services. Allows tutots to post and hold tutoring sessions with a shared white board, chat, and video call, and students to register and pay for tutoring sessions. The applicaiton also supports paid transactions through the PayPal API. The application was written in Elixir though Phoenix and JS through React, using Redux for consolodated state, and PeerJS to handle messaging, Formik to streamline form development, and PostgreSQL for data storage.',
+    summary: 'Pheonix and React Web application for tutoring services. Allows tutots to post and hold tutoring sessions with a shared white board, chat, and video call, and students to register and pay for tutoring sessions. The application also supports paid transactions through the PayPal API. The application was written in Elixir though Phoenix and JS through React, using Redux for consolodated state, and PeerJS to handle messaging, Formik to streamline form development, and PostgreSQL for data storage.',
     image: './stutor_icon.jpg',
     more: <Stutor />
   },
