@@ -50,5 +50,12 @@ export default [
     dates: "2018",
     summary: "Web app allowing users to manage tasks for themselves and their subordinates. The application is written in Elixir and React, using the Phoenix framework and Redux.",
     image: "./phoenix_icon.png",
+  },
+  {
+    title: 'Spotify Desktop Genius',
+    git: 'https://github.com/shanetimmerman/HBP2018',
+    dates: '2018',
+    summary: 'Kivy desktop application emulating Spotify and Genius\' “Behind the Lyrics” mobile feature. Users can control and listen to Spotify music through the Spotify API while viewing synced lyrical and song information scraped from the web',
+    image: './genius_icon.png'
   }
 ]
