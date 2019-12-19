@@ -15,6 +15,7 @@ import stutorSessions from './assets/stutor_images/stutorsessions.png'
 function Stutor() {
   return (
     <Container text>
+      Details to come soon.
       <Image src={stutorLogin} />
       <Image src={stutorProfile} />
       <Image src={stutorHome} />

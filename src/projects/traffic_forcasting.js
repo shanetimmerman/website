@@ -7,6 +7,7 @@ import udpatedFlowImage from './assets/traffic_forcasting/updated_flow.png'
 function TrafficForcasting() {
   return (
     <Container text>
+      Details to come soon.
       <Image src={originalFlowImage} />
       <Image src={udpatedFlowImage} />
     </Container>
