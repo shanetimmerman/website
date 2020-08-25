@@ -1,13 +1,3 @@
 /*******************************
          Site Overrides
 *******************************/
-
-.resumeColumn {
-  margin-left: 0em;
-  outline: 5px dotted green;
-}
-
-.resumeContent {
-  margin-left: 0em;
-  outline: 5px dotted red;
-}

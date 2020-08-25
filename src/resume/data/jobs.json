@@ -1,5 +1,21 @@
 [
   {
+    "company": "Trifacta",
+    "location": "San Francisco, CA",
+    "image": "./trifacta_icon.png",
+    "roles": [
+      {
+        "title": "Software Engineer Coop",
+        "dates": "January 2020 — August 2020",
+        "bullets": [
+          "Full-stack development of the role-based access control service at Trifacta with React and Spring, providing resource control and sharing of resources",
+          "Developed user and group management pages for Trifacta workspaces",
+          "Built cross migration system to maintain data parity between databases"
+        ]
+      }
+    ]
+  },
+  {
     "company": "Wayfair",
     "location": "Boston, MA",
     "image": "./wayfair_icon.jpg",
@@ -16,7 +32,7 @@
     ]
   },
   {
-    "company": "Northeaster Khoury College of Computer Science",
+    "company": "Khoury College",
     "location": "Boston, MA",
     "image": "./khoury_icon.jpg",
     "roles": [

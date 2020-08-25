@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Header, Grid, Image, Segment, Icon } from 'semantic-ui-react';
 
 import profilePhoto from './assets/profile_photo.jpeg'
-import Background from './assets/background.gif'
 
 function Home() {
   return (

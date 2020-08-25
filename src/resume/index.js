@@ -10,17 +10,14 @@ function Resume() {
   return (
     <Container>
       <Header textAlign='center' as='h1'>Resume</Header>
-      <Grid divided="vertically" relaxed="very" columns={3}>
-        <Grid.Column className='resumeColumn' width={8}>
+      <Grid divided="vertically" relaxed="very" columns={2}>
+        <Grid.Column className='resumeColumn' width={9}>
           <Jobs />
         </Grid.Column>
-        <Grid.Column  className='resumeColumn' width={4}>
+        <Grid.Column  className='resumeColumn' width={7}>
           <Education />
           <CourseWork style={{'padding-top': '20px'}}/>
-        </Grid.Column>
-        <Grid.Column className='resumeColumn' width={4}>
-          {/* TODO MAYBE MAKE SKILLS STICKY */}
-          <Skills />
+          <Skills stype={{'padding-top': '20px'}}/>
         </Grid.Column>
       </Grid>
     </Container>
