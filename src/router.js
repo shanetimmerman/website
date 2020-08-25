@@ -24,7 +24,7 @@ function WebRouter() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div>
-        <Menu items={navBar} />
+        <Menu items={navBar} widths={navBar.length} />
         <Switch>
           <Route path='/resume'>
             <Resume />

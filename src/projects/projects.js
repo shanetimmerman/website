@@ -32,7 +32,7 @@ export default [
     title: 'Weather Driven Traffic Forcasting',
     git: 'https://github.com/jennder/DCRNN_PyTorch/tree/weather_model',
     dates: '2019',
-    summary: 'Final project for introduction to computer science research. Aimed to extend the Diffuse Concurrent Neural Network from (Li et al. 2017) to include weather prediciton data to challange the prior that traffic patterns are a closed system.<br/>Project incomplete within the allotted course time. The model was written primarily by liyaguang, with slight modifications to enable weather data ingestion, and was composed in PyTorch.',
+    summary: 'Final project for CS 2950 Introduction to Computer Science Research. Aimed to extend the Diffuse Concurrent Neural Network from (Li et al. 2017) to include weather prediciton data to challange the prior that traffic patterns are a closed system.Project incomplete within the allotted course time. The model was written primarily by liyaguang, with slight modifications to enable weather data ingestion, and was composed in PyTorch.',
     image: './dcrnn_icon.png',
     abandoned: true,
     more: <TrafficForcasting />
@@ -62,7 +62,7 @@ export default [
     title: 'Spotify Desktop Genius',
     git: 'https://github.com/shanetimmerman/HBP2018',
     dates: '2018',
-    summary: 'Kivy desktop application emulating Spotify and Genius\' “Behind the Lyrics” mobile feature. I personally mainly use Spotify\'s desktop application when I am working, but I like being able to see the lyrics and narrative provied by Genius for that music. This project bridges those two technologies together, allowing users to control and listen to their Spotify music through Spotify\s API while viewing synced lyrical and song information scraped from the web. This project was made for HackBeanPot 2018, using the Kivy framework and Python3.',
+    summary: 'Kivy desktop application emulating Spotify and Genius\' “Behind the Lyrics” mobile feature. I personally mainly use Spotify\'s desktop application when I am working, but I like being able to see the lyrics and narrative provied by Genius for that music. This project bridges those two technologies together, allowing users to control and listen to their Spotify music through Spotify\'s API while viewing synced lyrical and song information scraped from the web. This project was made for HackBeanPot 2018, using the Kivy framework and Python3.',
     image: './genius_icon.png'
   }
 ]

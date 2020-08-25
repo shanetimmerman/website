@@ -2,9 +2,9 @@ import React from 'react'
 import courseData from './data/courses.json'
 import { Header, Segment} from 'semantic-ui-react'
 
-function CourseWork() {
+function CourseWork(props) {
   return (
-    <div>
+    <div {...props}>
       <Header textAlign='center' as='h2'>Coursework</Header>
       <Segment raised>
         <Header as='h3'>Computer Science Courses</Header>

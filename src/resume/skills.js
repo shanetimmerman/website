@@ -5,7 +5,7 @@ import skillData from './data/skills.json'
 
 function Skills() {
   return (
-    <div>
+    <div className='resumeContent'>
       <Header textAlign='center' as='h2'>Skills</Header>
       <Segment raised>
         <Item.Group divided>

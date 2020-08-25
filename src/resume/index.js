@@ -11,14 +11,14 @@ function Resume() {
     <Container>
       <Header textAlign='center' as='h1'>Resume</Header>
       <Grid divided="vertically" relaxed="very" columns={3}>
-        <Grid.Column width={8}>
+        <Grid.Column className='resumeColumn' width={8}>
           <Jobs />
         </Grid.Column>
-        <Grid.Column width={4}>
+        <Grid.Column  className='resumeColumn' width={4}>
           <Education />
-          <CourseWork />
+          <CourseWork style={{'padding-top': '20px'}}/>
         </Grid.Column>
-        <Grid.Column width={4}>
+        <Grid.Column className='resumeColumn' width={4}>
           {/* TODO MAYBE MAKE SKILLS STICKY */}
           <Skills />
         </Grid.Column>

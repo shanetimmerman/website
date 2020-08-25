@@ -1,3 +1,23 @@
 /*******************************
          Site Overrides
 *******************************/
+
+.homeContainer {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.homeBackground {
+  background-image:url('../../../home/assets/background.gif');
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+  margin:0;
+}
+
+.homeImage {
+  position: relative;
+  top: 0;
+  left: 0;
+}
