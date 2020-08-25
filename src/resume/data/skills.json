@@ -2,12 +2,12 @@
   {
     "domain": "Languages",
     "proficient": [
+      "JavaScript",
       "Python",
       "Java", 
       "Elixir"
     ],
     "familiar": [
-      "JavaScript",
       "Perl",
       "Scala" 
     ]
@@ -23,9 +23,9 @@
   {
     "domain": "Frameworks",
     "skills": [
-      "Flask",
       "React",
       "SpringBoot",
+      "Flask",
       "Phoenix",
       "Semantic UI",
       "Kivy"

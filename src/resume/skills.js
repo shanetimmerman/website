@@ -29,7 +29,7 @@ function Domain(props) {
           </List>
         </Segment>
         <Segment basic vertical>
-          <Header as='h4'><i>Proficient with</i></Header>
+          <Header as='h4'><i>Familiar with</i></Header>
           <List>
             {data.familiar.map(skill => <List.Item key={skill}>{skill}</List.Item>)}
           </List>
