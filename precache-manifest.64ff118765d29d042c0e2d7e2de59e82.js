@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a712b643d41386955ce27fe2cfd8af3",
+    "revision": "519882a9b5ceac7638af8b98e0289286",
     "url": "/index.html"
   },
   {
-    "revision": "9048e82eb9e0f434ce83",
-    "url": "/static/css/2.38bddf9e.chunk.css"
+    "revision": "de1264cde455d1392f1d",
+    "url": "/static/css/2.0f5a9af7.chunk.css"
   },
   {
-    "revision": "88cc036cdfc4edede07c",
+    "revision": "569ba84681740f6e08a5",
     "url": "/static/css/main.fb5e79b7.chunk.css"
   },
   {
-    "revision": "9048e82eb9e0f434ce83",
-    "url": "/static/js/2.4023b0b3.chunk.js"
+    "revision": "de1264cde455d1392f1d",
+    "url": "/static/js/2.f51b4739.chunk.js"
   },
   {
     "revision": "0d21a76ca5175233de357ea2688d7eb8",
-    "url": "/static/js/2.4023b0b3.chunk.js.LICENSE"
+    "url": "/static/js/2.f51b4739.chunk.js.LICENSE"
   },
   {
-    "revision": "88cc036cdfc4edede07c",
-    "url": "/static/js/main.76eebe55.chunk.js"
+    "revision": "569ba84681740f6e08a5",
+    "url": "/static/js/main.24b6b8ad.chunk.js"
   },
   {
     "revision": "a796a236ee8470d38315",
     "url": "/static/js/runtime-main.783779e9.js"
+  },
+  {
+    "revision": "12c8766f34e64e1f79715154d47838cb",
+    "url": "/static/media/background.12c8766f.gif"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
@@ -62,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
     "url": "/static/media/flags.9c74e172.png"
+  },
+  {
+    "revision": "3fa861c983d834b8150265355a843676",
+    "url": "/static/media/fluid_screen_logo.3fa861c9.png"
   },
   {
     "revision": "357a0d4aaf1cedfa41dfb38bf3acb961",
@@ -166,6 +174,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5dd4dca1a0b0d9ce6336cae7cf27ce77",
     "url": "/static/media/stutorsessions.5dd4dca1.png"
+  },
+  {
+    "revision": "a31f7c73cd265dd27333f3a14f9929a5",
+    "url": "/static/media/trifacta_icon.a31f7c73.png"
   },
   {
     "revision": "2720773a04c51499d15b2dbb41d32398",
