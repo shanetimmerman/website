@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc4445c187b175bc79734a7ffa06eca8",
+    "revision": "57e3cf5b3e69b1a61056092b720701e5",
     "url": "/index.html"
   },
   {
-    "revision": "de1264cde455d1392f1d",
+    "revision": "684657ce773af8f55891",
     "url": "/static/css/2.0f5a9af7.chunk.css"
   },
   {
-    "revision": "d018b4a8b89443d5d3f4",
+    "revision": "9e366c9daf3b1619571f",
     "url": "/static/css/main.fb5e79b7.chunk.css"
   },
   {
-    "revision": "de1264cde455d1392f1d",
-    "url": "/static/js/2.f51b4739.chunk.js"
+    "revision": "684657ce773af8f55891",
+    "url": "/static/js/2.7120bef8.chunk.js"
   },
   {
     "revision": "0d21a76ca5175233de357ea2688d7eb8",
-    "url": "/static/js/2.f51b4739.chunk.js.LICENSE"
+    "url": "/static/js/2.7120bef8.chunk.js.LICENSE"
   },
   {
-    "revision": "d018b4a8b89443d5d3f4",
-    "url": "/static/js/main.a6c59c47.chunk.js"
+    "revision": "9e366c9daf3b1619571f",
+    "url": "/static/js/main.253fb76b.chunk.js"
   },
   {
     "revision": "a796a236ee8470d38315",
@@ -106,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c2885616f3b521ae055103583d4761f4",
     "url": "/static/media/netflix_icon.c2885616.jpeg"
+  },
+  {
+    "revision": "8c5cf066449408c07e500fb5c905689c",
+    "url": "/static/media/northeastern_icon.8c5cf066.png"
   },
   {
     "revision": "b3e35d59da415ec6dde0f974b7d50be2",
