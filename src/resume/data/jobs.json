@@ -6,7 +6,7 @@
     "roles": [
       {
         "title": "Software Engineer Coop",
-        "dates": "January 2020 — August 2020",
+        "dates": "Jan. 2020—Aug. 2020",
         "bullets": [
           "Full-stack development of the role-based access control service at Trifacta with React and Spring, providing resource control and sharing of resources",
           "Developed user and group management pages for Trifacta workspaces",
@@ -22,7 +22,7 @@
     "roles": [
       {
         "title": "Software Engineer Coop",
-        "dates": "January 2019 — August 2019",
+        "dates": "Jan 2019—Aug. 2019",
         "bullets": [
           "Developer for scalable distributed web scraping platform to gather and clean competitor product and catalog information built off the Scrapy framework",
           "Built spiders and spider middlewares to crawl web pages, APIs, and sitemaps for over a dozen competitors",
@@ -38,7 +38,7 @@
     "roles": [
       {
         "title": "Algorithms & Data Structures TA",
-        "dates": "September 2018 — December 2018",
+        "dates": "Sept. 2018—Dec. 2018",
         "bullets": [
           "Lead office hours and recitations on how common algorithms and data structures work and how to design and reason about algorithms",
           "Graded homework, assessments, and algorithm implementations in python"
@@ -46,7 +46,7 @@
       },
       {
         "title": "Fundamentals of Computer Science Tutor",
-        "dates": "September 2017 — December 2017",
+        "dates": "Sept. 2017—Dec. 2017",
         "bullets": [
           "Lead labs and office ours introducing principles of program design",
           "Grading homework modules in Racket, tests, and quizzes"
@@ -61,7 +61,7 @@
     "roles": [
       {
         "title": "Software Engineer Coop",
-        "dates": "January 2018 — August 2018",
+        "dates": "Jan. 2018—Aug. 2018",
         "bullets": [
           "Fullstack developer for Kivy desktop application allowing researchers to configure, run, and analyze lab experiments",
           "Worked with OpenCV computer vision pipeline for analyzing bacterial motion",

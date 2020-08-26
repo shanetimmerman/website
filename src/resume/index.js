@@ -16,8 +16,8 @@ function Resume() {
         </Grid.Column>
         <Grid.Column  className='resumeColumn' width={7}>
           <Education />
-          <CourseWork style={{'padding-top': '20px'}}/>
-          <Skills stype={{'padding-top': '20px'}}/>
+          <CourseWork style={{ 'padding-top': '20px' }}/>
+          <Skills style={{ 'padding-top': '20px' }}/>
         </Grid.Column>
       </Grid>
     </Container>

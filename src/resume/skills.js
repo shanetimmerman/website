@@ -3,9 +3,9 @@ import { Header, Segment, Item, List } from 'semantic-ui-react'
 
 import skillData from './data/skills.json'
 
-function Skills() {
+function Skills(props) {
   return (
-    <div className='resumeContent'>
+    <div className='resumeContent' {...props}>
       <Header textAlign='center' as='h2'>Skills</Header>
       <Segment raised>
         <Item.Group divided>

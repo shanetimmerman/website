@@ -9,11 +9,13 @@
       [
         "Northeastern Honors Program",
         "Dean’s List"
-      ]
+      ],
+    "image": "./northeastern_icon.png" 
   },
   "highschool": {
     "school": "Westwood High School",
     "graduationDate": "May 2016",
-    "degree": "High School Diploma"
+    "degree": "High School Diploma",
+    "image": "./westwood_icon.png"
   }
 }

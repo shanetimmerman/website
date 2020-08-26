@@ -4,9 +4,9 @@ import { Header, Item, List, Segment, Grid } from 'semantic-ui-react'
 
 let assets = require.context('./assets', true)
 
-function Jobs() {
+function Jobs(props) {
   return (
-    <div>
+    <div {...props}>
       <Header textAlign='center' as='h2'>Work Experience</Header>
       <Item.Group>
         {jobData.map(job => <Job key={job.company} data={job} />)}

@@ -35,7 +35,7 @@ export default [
     summary: 'Final project for CS 2950 Introduction to Computer Science Research. Aimed to extend the Diffuse Concurrent Neural Network from (Li et al. 2017) to include weather prediciton data to challange the prior that traffic patterns are a closed system.Project incomplete within the allotted course time. The model was written primarily by liyaguang, with slight modifications to enable weather data ingestion, and was composed in PyTorch.',
     image: './dcrnn_icon.png',
     abandoned: true,
-    more: <TrafficForcasting />
+    // more: <TrafficForcasting />
   },
   {
     title: 'Santorini',
