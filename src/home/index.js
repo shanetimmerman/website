@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className='homeBackground'>
       <Container className='homeContainer' text textAlign='center'>
-        <Header as='h1' color='inverted grey'>Hello There!</Header>
+        <Header as='h1'>Hello There!</Header>
         <Segment raised>
           <Grid columns={2} relaxed>
               <Grid.Column>
@@ -31,11 +31,11 @@ function Home() {
             </Grid>
         </Segment>
         <Segment basic>
-          <Header floated='left' color='inverted grey' href='https://www.linkedin.com/in/shanetimmerman/' target='_blank' rel='noopener noreferrer' as='a'>
+          <Header floated='left' href='https://www.linkedin.com/in/shanetimmerman/' target='_blank' rel='noopener noreferrer' as='a'>
             <Icon name='linkedin' />
             shanetimmerman
           </Header>
-          <Header floated='right' color='inverted grey' href='https://github.com/shanetimmerman' target='_blank' rel='noopener noreferrer' as='a'>
+          <Header floated='right' href='https://github.com/shanetimmerman' target='_blank' rel='noopener noreferrer' as='a'>
             <Icon name='github square' />
             shanetimmerman
           </Header>
