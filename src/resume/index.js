@@ -11,13 +11,13 @@ function Resume() {
     <Container>
       <Header textAlign='center' as='h1'>Resume</Header>
       <Grid divided="vertically" relaxed="very" columns={2}>
-        <Grid.Column className='resumeColumn' width={9}>
+        <Grid.Column className='resumeColumn' width={8}>
           <Jobs />
         </Grid.Column>
-        <Grid.Column  className='resumeColumn' width={7}>
+        <Grid.Column  className='resumeColumn' width={8}>
           <Education />
-          <CourseWork style={{ 'padding-top': '20px' }}/>
-          <Skills style={{ 'padding-top': '20px' }}/>
+          <CourseWork style={{ paddingTop: '20px' }}/>
+          <Skills style={{ paddingTop: '20px' }}/>
         </Grid.Column>
       </Grid>
     </Container>

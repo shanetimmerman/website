@@ -5,7 +5,7 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import { Menu } from 'semantic-ui-react'
+import { Menu, } from 'semantic-ui-react'
 
 import Resume from './resume/index.js'
 import Home from './home/index.js'

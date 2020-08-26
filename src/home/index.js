@@ -16,12 +16,12 @@ function Home() {
               </Grid.Column>
               <Grid.Column textAlign='justified'>
                 <p>
-                  I'm a tinkerer interested in exploring how software can enable 
-                  people!
+                  I'm a tinkerer interested in exploring how software can help
+                  enable people!
                   <br />
                   <br />
-                  Current interests include cooking, breadbaking, piano, 
-                  photography, yoga, and film!
+                  Current interests include photography, cooking, breadbaking,
+                  piano, yoga, and film!
                   <br />
                   <br />
                   This site is very much in progress, so please mind the 

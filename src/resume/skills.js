@@ -24,13 +24,13 @@ function Domain(props) {
       <Item.Content>
         <Segment basic vertical>
           <Header as='h4'><i>Proficient with</i></Header>
-          <List>
+          <List bulleted>
             {data.proficient.map(skill => <List.Item key={skill}>{skill}</List.Item>)}
           </List>
         </Segment>
         <Segment basic vertical>
           <Header as='h4'><i>Familiar with</i></Header>
-          <List>
+          <List bulleted>
             {data.familiar.map(skill => <List.Item key={skill}>{skill}</List.Item>)}
           </List>
         </Segment>
@@ -39,7 +39,7 @@ function Domain(props) {
   } else {
     skills = (
       <Item.Content>
-        <List>
+        <List bulleted>
           {data.skills.map(skill => <List.Item key={skill}>{skill}</List.Item>)}
         </List>
       </Item.Content>

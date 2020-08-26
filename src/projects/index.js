@@ -9,7 +9,7 @@ let assets = require.context('./assets', true)
 
 function Projects() {
   return (
-    <Container >
+    <Container style={{ paddingBottom: '50px' }}>
       <Header textAlign='center' as='h1'>Projects</Header>
       <Container as='p' text>
         Here's some of the things I've made in recent years. Some of it's good, 

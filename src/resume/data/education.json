@@ -1,7 +1,8 @@
 {
   "college": {
-    "school": "Northeastern University",
+    "school": "Northeastern",
     "college": "Khoury College",
+    "location": "Boston, MA",
     "degree": "Candidate for a Bachelor of Science in Computer Science & Biology",
     "graduationDate": "Sept. 2016—Dec. 2020",
     "GPA": "3.85/4.0",
@@ -13,7 +14,8 @@
     "image": "./northeastern_icon.png" 
   },
   "highschool": {
-    "school": "Westwood High School",
+    "school": "Westwood High",
+    "location": "Westwood, MA",
     "graduationDate": "May 2016",
     "degree": "High School Diploma",
     "image": "./westwood_icon.png"
