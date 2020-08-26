@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Header, Grid, Image, Segment, Icon } from 'semantic-ui-react';
 
-import profilePhoto from './assets/profile_photo.jpeg'
+import profilePhoto from './assets/profile_photo.jpg'
 
 function Home() {
   return (
@@ -17,15 +17,15 @@ function Home() {
               <Grid.Column textAlign='justified'>
                 <p>
                   I'm a tinkerer interested in exploring how software can enable 
-                  human activities!
+                  people!
                   <br />
                   <br />
-                  Mainly I'm interested in music, film, photography and cellular 
-                  and moleculuar biology!
+                  Current interests include cooking, breadbaking, piano, 
+                  photography, yoga, and film!
                   <br />
                   <br />
-                  This site is very much a work in progress, so please mind our 
-                  appearnace and watch out for new updates!
+                  This site is very much in progress, so please mind the 
+                  appearance and watch out for new updates!
                 </p>
               </Grid.Column>
             </Grid>
