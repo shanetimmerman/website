@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
   Link,
+  useLocation
 } from 'react-router-dom';
 import { Menu, } from 'semantic-ui-react'
 
@@ -14,8 +15,8 @@ import Pics from './pics/index.js'
 
 let navBar = [
   { name:'Home', key:'home', as:Link, to:'/'},
-  { name:'Resume', key:'resume', as:Link, to:'/resume'},
   { name:'Projects', key:'projects', as:Link, to:'/projects'},
+  { name:'Resume', key:'resume', as:Link, to:'/resume'},
   { name: 'Pics', key:'pics', as:Link, to:'/pics'}
 ]
 
@@ -24,7 +25,7 @@ function WebRouter() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div>
-        <Menu items={navBar} widths={navBar.length} style={{ marginBottom: '0px'}} />
+        <NavMenu />
         <Switch>
           <Route path='/resume'>
             <Resume />
@@ -42,6 +43,21 @@ function WebRouter() {
       </div>
     </Router>
   );
+}
+
+function NavMenu() {
+  const location = useLocation()
+  return (
+    <Menu style={{ marginBottom: '0px' }} raised>
+      <Menu.Menu items={navBar} position='right'>
+        {navBar.map(props => (
+          <Menu.Item as={Link} to={props.to} key={`menu_${props.name}_item`} active={location.pathname === props.to}>
+            {props.name}
+          </Menu.Item>
+        ))}
+      </Menu.Menu>
+    </Menu>
+  )
 }
 
 export default WebRouter;

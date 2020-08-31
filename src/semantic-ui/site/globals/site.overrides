@@ -6,10 +6,11 @@
   position: relative;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 
 .homeBackground {
-  background-image:url('../../../home/assets/background.gif');
+  background-image:url('../../../home/assets/background_cropped.gif');
   background-size: cover;
   height: 100vh;
   padding:0;
@@ -19,4 +20,9 @@
 
 div.menu + div.container {
   padding-top: 20px; 
+}
+
+div.modal > div.container {
+  padding-top: 20px;
+  padding-bottom: 50px;
 }

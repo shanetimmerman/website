@@ -5,7 +5,7 @@ import profilePhoto from './assets/profile_photo.jpg'
 
 function Home() {
   return (
-    <Container className='homeBackground' fluid>
+    <Container className='homeBackground' fluid style={{overflow: 'hidden'}}>
       <Container className='homeContainer' text textAlign='center'>
         <Header as='h1'>Hello There!</Header>
         <Segment raised>
