@@ -13,8 +13,8 @@ function Projects() {
       <Header textAlign='center' as='h1'>Projects</Header>
       <Container as='p' text>
         Here's some of the things I've made in recent years. Some of it's good, 
-        some of it's wavy, all of it is made with love and blood and sweat and 
-        tears. The source code can be found in my Github!
+        some of it's less good, all of it is made with love and blood and sweat and 
+        tears. Click on the ear tab on any project to see the source code on Github!
       </Container>
       <Item.Group>
         {projectData.map(project => <Project key={project.title} data={project} />)}

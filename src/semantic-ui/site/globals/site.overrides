@@ -16,3 +16,7 @@
   margin:0;
   overflow-y: hidden;
 }
+
+div.menu + div.container {
+  padding-top: 20px; 
+}

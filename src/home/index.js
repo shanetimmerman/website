@@ -5,7 +5,7 @@ import profilePhoto from './assets/profile_photo.jpg'
 
 function Home() {
   return (
-    <div className='homeBackground'>
+    <Container className='homeBackground' fluid>
       <Container className='homeContainer' text textAlign='center'>
         <Header as='h1'>Hello There!</Header>
         <Segment raised>
@@ -41,7 +41,7 @@ function Home() {
           </Header>
         </Segment>
       </Container>
-    </div>
+    </Container>
   );
 }
 
