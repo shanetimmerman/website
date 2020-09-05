@@ -1,60 +1,79 @@
 import React from 'react'
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
-import { Item, Container, List, Table, Header, Image, Segment } from 'semantic-ui-react'
+import { Item, Container, List, Table, Header, Image, Segment, Grid, Icon } from 'semantic-ui-react'
 import _ from 'lodash'
 
 import netflixRecommendations from './data/netflix_recomendations.json'
 import aprioriPruningImage from './assets/apriori_pruning_images/pruning_tree.png'
 import workFlowImage from './assets/apriori_pruning_images/diagram.png'
 
+import MOVIE_COVERS from './assets/movies/movie_covers'
+
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-
 function FrequencyItemset() {
-  let recs = _.sampleSize(netflixRecommendations, 150)
+  const recs = _.sampleSize(netflixRecommendations, 150)
+
+  
   return (
     <Container text>
       <p>
         Early youtube utilized frequent itemset mining as a method for recommending videos. While they have advanced their algorithm significantly, we wanted to replicate this system with the 2009 netflix movie dataset.
       </p>
-      <CarouselProvider
-      naturalSlideWidth={100}
-      naturalSlideHeight={30}
-      totalSlides={recs.length}
-      interval={2500}
-      isPlaying={true}
-      infinite={true}
-      visibleSlides={3}
-      orientation='vertical'
-      >
-        <Slider>
-          { recs.map((rec, index) => {
-            let key = `${rec.rec.title}${rec.seen.map(movie => movie.title).join(',')}`
-            return (
+      <Segment raised>
+        <CarouselProvider
+        naturalSlideWidth={100}
+        naturalSlideHeight={20}
+        totalSlides={recs.length}
+        interval={2500}
+        isPlaying={true}
+        infinite={true}
+        visibleSlides={3}
+        orientation='vertical'
+        >
+          <Grid textAlign='center'>
+            <Grid.Column width={8}>
+              <h3>If you've seen:</h3>
+            </Grid.Column>
+            <Grid.Column width={2}/>
+            <Grid.Column width={6}>
+              <h3>We recommend:</h3>
+            </Grid.Column>
+          </Grid>
+          <Slider>
+            { recs.map((rec, index) => {
+              let key = `${rec.rec.title}${rec.seen.map(movie => movie.title).join(',')}`
+              return (
               <Slide key={`div${key}`} index={index}>
-                <Item key={`item${key}`}>
-                  <Item.Header>If you've seen:</Item.Header>
-                  <Item.Content key={`seen${key}`}>
-                    <List>
+                <Grid verticalAlign='middle' >
+                  <Grid.Column width={8}>
+                    <div style={{
+                      display: 'flex', 
+                      flexDirection: 'row',
+                      justifyContent: 'space-evenly',
+                    }}>
                       { rec.seen.map(movie => (
-                      <List.Item key={`seen${movie.title}${key}`}>
-                        {movie.title} ({movie.yr})
-                      </List.Item>
-                      ))}
-                    </List>
-                  </Item.Content>
-                  <Item.Header>You'd probably like:</Item.Header>
-                  <Item.Content key={`rec${key}`}>
-                    {rec.rec.title} ({rec.rec.yr})
-                  </Item.Content>
-                  <Item.Content key={`probability${key}`}>Association rule holds for {(rec.prob * 100).toFixed(2)}% of users</Item.Content>
-                </Item>
+                        <Image src={MOVIE_COVERS[movie.title]} size='tiny'/>
+                      )) }
+                    </div>
+                  </Grid.Column>
+                  <Grid.Column width={4}>
+                    <Segment basic textAlign='center' >
+                      <Icon name='arrow right' size='huge' />
+                      <p>{(rec.prob * 100).toFixed(2)}%</p>
+                    </Segment>
+                  </Grid.Column>
+                  <Grid.Column width={4} style={{alignContent: 'center'}}>
+                    <Image src={MOVIE_COVERS[rec.rec.title]} size='tiny'  style={{alignContent: 'center'}}/>
+                  </Grid.Column>
+                </Grid>
               </Slide>
-            )
-          })
-        }
-        </Slider>
-      </CarouselProvider>
+              )
+            })
+          }
+          </Slider>
+        </CarouselProvider>
+      </Segment>
       <p>
         The application was run over 5 iterations with a support threshold of 15%, meaning that if a review pattern was not supported by 15% of the total population, it would be pruned.
       </p>
