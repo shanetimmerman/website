@@ -10,7 +10,7 @@ function Resume() {
   return (
     <Container>
       <Header textAlign='center' as='h1'>Resume</Header>
-      <Grid divided="vertically" relaxed="very" columns={2}>
+      <Grid divided="vertically" relaxed="very" stackable columns={2}>
         <Grid.Column className='resumeColumn' width={8}>
           <Jobs />
         </Grid.Column>

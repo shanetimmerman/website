@@ -3,13 +3,13 @@ import { Container, Header, Grid, Image, Segment, Icon } from 'semantic-ui-react
 
 import profilePhoto from './assets/profile_photo.jpg'
 
-function Home() {
+function Background() {
   return (
     <Container className='homeBackground' fluid style={{overflow: 'hidden'}}>
       <Container className='homeContainer' text textAlign='center'>
         <Header as='h1'>Hello There!</Header>
         <Segment raised>
-          <Grid columns={2} stackable relaxed>
+          <Grid columns={2} relaxed>
               <Grid.Column>
                 <Image src={profilePhoto} />
                 <p>This is me ^</p>
@@ -45,4 +45,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Background;
