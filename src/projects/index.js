@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Container, Header, Item, Segment, Label, Modal } from 'semantic-ui-react'
 
@@ -70,5 +70,34 @@ function Project(props) {
     </Segment>
   )
 }
+
+function ShowContentHover(props) {
+  let [hover, setHover] = useState(false)
+  let mouseEntered = () => setHover(true)
+  let mouseLeft = ()=> setHover(false)
+  let { data } = props
+
+  let clickToSeeMore = data.more ? (
+    <Segment basic textAlign='center' style={{marginTop: '-5px'}}>
+      <Header color='grey' as='h5'>- Click to find out more - </Header>
+    </Segment>
+  ) : ""
+  return (
+    <Segment raised={hover && props.raised} onMouseEnter={mouseEntered} onMouseLeave={mouseLeft} {...props} style={{transition: 'height 0.5s'}}>
+      <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
+      <Item style={{transition: 'height 0.5s'}}>
+        <Item.Image src={assets(data.image)} size='tiny' circular bordered floated='left' style={{transition: 'height 0.5s'}}/>
+        <Item.Content style={{transition: 'height 0.5s'}}>
+          <Item.Header as='h2'>{data.title}</Item.Header>
+          { hover ? (<div>
+          <Item.Description content={data.summary}/>
+          {clickToSeeMore}
+          </div>)
+            : '' }
+        </Item.Content>
+      </Item>
+    </Segment>
+  )
+};
 
 export default Projects;
