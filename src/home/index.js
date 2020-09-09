@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Header, Grid, Image, Segment, Icon } from 'semantic-ui-react';
+import { Container, Header, Grid, Image, Segment, Icon, Transition } from 'semantic-ui-react';
 
 import profilePhoto from './assets/profile_photo.jpg'
 
@@ -31,11 +31,11 @@ function Home() {
             </Grid>
         </Segment>
         <Segment basic>
-          <Header floated='left' href='https://www.linkedin.com/in/shanetimmerman/' target='_blank' rel='noopener noreferrer' as='a'>
+          <Header className='myLink' floated='left' href='https://www.linkedin.com/in/shanetimmerman/' target='_blank' rel='noopener noreferrer' as='a'>
             <Icon name='linkedin' />
             shanetimmerman
           </Header>
-          <Header floated='right' href='https://github.com/shanetimmerman' target='_blank' rel='noopener noreferrer' as='a'>
+          <Header className='myLink' floated='right' href='https://github.com/shanetimmerman' target='_blank' rel='noopener noreferrer' as='a'>
             <Icon name='github square' />
             shanetimmerman
           </Header>
