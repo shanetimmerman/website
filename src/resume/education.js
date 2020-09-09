@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, List, Segment, Item } from 'semantic-ui-react'
+import { Header, List, Segment, Item, Grid } from 'semantic-ui-react'
 
 import educationData from './data/education.json'
 
@@ -28,16 +28,25 @@ function School({data}) {
         </Segment>
         <Item>
           { data.college ? (<Item.Content as='h3'>{data.college}</Item.Content>): null }
-          <Item.Header as='h5'>{data.degree}</Item.Header>
-          <Item.Header as='h4'>{data.graduationDate}</Item.Header>
-          { data.GPA ? (<Item.Meta as='h5'>GPA: <p>{data.GPA}</p></Item.Meta>): null }
-          { data.honors ? (
-            <div>
-              <List.Header as='h5'>Honors:</List.Header>
-              <List bulleted>
-                {data.honors.map(honor => <List.Item key={honor}>{honor}</List.Item>)}
-              </List>
-            </div>) : null }
+          <Item.Header as='h5' style={{marginTop: '-5px'}}>{data.degree}</Item.Header>
+          <Item.Header as='h4' style={{marginTop: '-5px'}}>{data.graduationDate}</Item.Header>
+          <Grid columns={2}>
+            <Grid.Column width={5}>
+              { data.GPA ? (<div>
+                <Item.Meta as='h5'>GPA:</Item.Meta>
+                <p style={{marginTop: '-12px'}}>{data.GPA}</p>
+                </div>): null }
+            </Grid.Column>
+            <Grid.Column width={11}>
+              { data.honors ? (
+                <div>
+                  <List.Header as='h5'>Honors:</List.Header>
+                  <List bulleted style={{marginTop: '-12px'}}>
+                    {data.honors.map(honor => <List.Item key={honor}>{honor}</List.Item>)}
+                  </List>
+                </div>) : null }
+            </Grid.Column>
+          </Grid>
         </Item>
       </Item>
     </Segment>
