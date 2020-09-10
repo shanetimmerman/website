@@ -16,9 +16,9 @@ function Resume() {
             <Jobs delay={0}/>
         </Grid.Column>
         <Grid.Column  className='resumeColumn' width={8}>
-          <Education delay={0} />
-          <CourseWork style={{ paddingTop: '20px' }} delay={400} />
-          <Skills style={{ paddingTop: '20px' }} delay={600}/>
+          <Education delay={100} />
+          <CourseWork style={{ paddingTop: '20px' }} delay={500} />
+          <Skills style={{ paddingTop: '20px' }} delay={700}/>
         </Grid.Column>
       </Grid>
     </Container>
