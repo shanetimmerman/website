@@ -7,11 +7,11 @@ class Signature extends React.Component {
       targets: '.signature',
       strokeDashoffset: [animejs.setDashoffset, 0],
       easing: 'cubicBezier(.5, .05, .1, .3)',
-      duration: 3000,
+      duration: 2000,
     });
     animejs({
       targets: '.fill',
-      delay: 3000,
+      delay: 2000,
       fill: ['#ffffff', '#000000'],
       easing: 'easeInOutQuad',
       duration: 2000
