@@ -12,7 +12,14 @@ function CourseWork(props) {
         easing='easeInOutQuad'
         delay={props.delay}
       >
-        <Header textAlign='center' as='h2'>Coursework</Header>
+        <Anime
+          translateY={[50, 0]}
+          duration={800}
+          easing='easeInOutQuad'
+          delay={props.delay}
+        >
+          <Header textAlign='center' as='h2'>Coursework</Header>
+        </Anime>
         <Anime
           translateY={[100, 0]}
           delay={props.delay}

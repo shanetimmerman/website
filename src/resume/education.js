@@ -22,6 +22,8 @@ function Education(props) {
             delay={props.delay}
             duration={800}
             easing='easeInOutQuad'
+            opacity={[0, 1]}
+            
           >
             <School data={educationData.college} />
           </Anime>
@@ -29,6 +31,7 @@ function Education(props) {
             translateY={[100, 0]}
             delay={props.delay + 200}
             duration={800}
+            opacity={[0, 1]}
             easing='easeInOutQuad'
           >
             <School data={educationData.highschool} />
