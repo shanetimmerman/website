@@ -1,5 +1,7 @@
 import jobData from './data/jobs.json'
 import React from 'react'
+import Anime from 'react-anime'
+import animejs from 'animejs'
 import { Header, Item, List, Segment, Grid } from 'semantic-ui-react'
 
 let assets = require.context('./assets', true)
@@ -7,10 +9,25 @@ let assets = require.context('./assets', true)
 function Jobs(props) {
   return (
     <div {...props}>
-      <Header textAlign='center' as='h2'>Work Experience</Header>
-      <Item.Group>
-        {jobData.map(job => <Job key={job.company} data={job} />)}
-      </Item.Group>
+      <Anime
+        opacity={[0, 1]}
+        duration={800}
+        easing='easeInOutQuad'
+        delay={props.delay}
+      >
+        <Header textAlign='center' as='h2'>Work Experience</Header>
+        <Item.Group>
+          <Anime
+            translateY={[100, 0]}
+            opacity={[0, 1]}
+            delay={animejs.stagger(200)}
+            duration={800}
+            easing='easeInOutQuad'
+          >
+            {jobData.map(job => <Job key={job.company} data={job} />)}
+          </Anime>
+        </Item.Group>
+      </Anime>
     </div>
   )
 }
@@ -18,7 +35,7 @@ function Jobs(props) {
 function Job(props) {
   let { data } = props
   return (
-    <Segment raised>
+    <Segment raised style={{marginTop: '20px'}}>
       <Item>
         <Segment basic clearing>
           <Item.Image src={assets(data.image)} floated='left' size='small' circular bordered />

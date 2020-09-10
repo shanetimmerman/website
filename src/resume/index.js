@@ -1,4 +1,5 @@
 import React from 'react'
+import Anime from 'react-anime'
 import { Container, Header, Grid } from 'semantic-ui-react'
 
 import Jobs from './jobs.js'
@@ -12,12 +13,12 @@ function Resume() {
       <Header textAlign='center' as='h1'>Resume</Header>
       <Grid divided="vertically" relaxed="very" stackable columns={2}>
         <Grid.Column className='resumeColumn' width={8}>
-          <Jobs />
+            <Jobs delay={0}/>
         </Grid.Column>
         <Grid.Column  className='resumeColumn' width={8}>
-          <Education />
-          <CourseWork style={{ paddingTop: '20px' }}/>
-          <Skills style={{ paddingTop: '20px' }}/>
+          <Education delay={0} />
+          <CourseWork style={{ paddingTop: '20px' }} delay={400} />
+          <Skills style={{ paddingTop: '20px' }} delay={600}/>
         </Grid.Column>
       </Grid>
     </Container>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Anime from 'react-anime'
 import { Header, Segment, Item, List, Grid } from 'semantic-ui-react'
 
 import skillData from './data/skills.json'
@@ -6,10 +7,24 @@ import skillData from './data/skills.json'
 function Skills(props) {
   return (
     <div className='resumeContent' {...props}>
-      <Header textAlign='center' as='h2'>Skills</Header>
-      <Segment raised>
-        {skillData.map(domain => <Domain key={domain.domain} data={domain} />)}
-      </Segment>
+      <Anime
+        opacity={[0, 1]}
+        duration={800}
+        easing='easeInOutQuad'
+        delay={props.delay}
+      >
+        <Header textAlign='center' as='h2'>Skills</Header>
+        <Anime
+            translateY={[100, 0]}
+            delay={props.delay}
+            duration={800}
+            easing='easeInOutQuad'
+        >
+          <Segment raised style={{marginTop: '20px'}}>
+            {skillData.map(domain => <Domain key={domain.domain} data={domain} />)}
+          </Segment>
+        </Anime>
+      </Anime>
     </div>
   )
 }

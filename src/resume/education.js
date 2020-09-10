@@ -1,25 +1,47 @@
 import React from 'react'
+import Anime from 'react-anime'
 import { Header, List, Segment, Item, Grid } from 'semantic-ui-react'
 
 import educationData from './data/education.json'
 
 let assets = require.context('./assets', true)
 
-function Education() {
+function Education(props) {
   return (
     <div>
-      <Header textAlign='center' as='h2'>Education</Header>
-      <Item.Group>
-        <School data={educationData.college} />
-        <School data={educationData.highschool} />
-      </Item.Group>
+      <Anime
+        opacity={[0, 1]}
+        duration={800}
+        easing='easeInOutQuad'
+        delay={props.delay}
+      >
+        <Header textAlign='center' as='h2'>Education</Header>
+        <Item.Group>
+          <Anime
+            translateY={[100, 0]}
+            delay={props.delay}
+            duration={800}
+            easing='easeInOutQuad'
+          >
+            <School data={educationData.college} />
+          </Anime>
+          <Anime
+            translateY={[100, 0]}
+            delay={props.delay + 200}
+            duration={800}
+            easing='easeInOutQuad'
+          >
+            <School data={educationData.highschool} />
+          </Anime>
+        </Item.Group>
+      </Anime>
     </div>
   )
 }
 
 function School({data}) {
   return (
-    <Segment raised>
+    <Segment raised style={{marginTop: '20px'}}>
       <Item>
         <Segment basic clearing>
           <Item.Image src={assets(data.image)} floated='left' size='small' circular bordered />
