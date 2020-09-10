@@ -41,17 +41,33 @@ function Home() {
                   </Grid.Column>
                 </Grid>
             </Segment>
+          </Anime>
         <Segment basic>
-          <Header className='myLink' floated='left' href='https://www.linkedin.com/in/shanetimmerman/' target='_blank' rel='noopener noreferrer' as='a'>
-            <Icon name='linkedin' />
-            shanetimmerman
-          </Header>
-          <Header className='myLink' floated='right' href='https://github.com/shanetimmerman' target='_blank' rel='noopener noreferrer' as='a'>
-            <Icon name='github square' />
-            shanetimmerman
-          </Header>
+          <Anime
+            opacity={[0, 1]}
+            translateY={[100, 0]}
+            duration={2000}
+            delay={1000}
+            easing='easeInOutQuad'
+          >
+            <Header className='myLink' floated='left' href='https://www.linkedin.com/in/shanetimmerman/' target='_blank' rel='noopener noreferrer' as='a'>
+              <Icon name='linkedin' />
+              shanetimmerman
+            </Header>
+          </Anime>
+          <Anime
+            opacity={[0, 1]}
+            translateY={[100, 0]}
+            duration={2000}
+            delay={1200}
+            easing='easeInOutQuad'
+          >
+            <Header className='myLink' floated='right' href='https://github.com/shanetimmerman' target='_blank' rel='noopener noreferrer' as='a'>
+              <Icon name='github square' />
+              shanetimmerman
+            </Header>
+          </Anime>
         </Segment>
-      </Anime>
       </Container>
     </Container>
   );
