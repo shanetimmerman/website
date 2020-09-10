@@ -1,33 +1,24 @@
 import jobData from './data/jobs.json'
 import React from 'react'
-import Anime from 'react-anime'
-import animejs from 'animejs'
 import { Header, Item, List, Segment, Grid } from 'semantic-ui-react'
+import FadeIn from '../components/animations/fade_in.js'
+import FadeUpList from '../components/animations/fade_up_list'
 
 let assets = require.context('./assets', true)
 
 function Jobs(props) {
   return (
     <div {...props}>
-      <Anime
-        opacity={[0, 1]}
-        duration={800}
-        easing='easeInOutQuad'
+      <FadeIn
         delay={props.delay}
       >
         <Header textAlign='center' as='h2'>Work Experience</Header>
         <Item.Group>
-          <Anime
-            translateY={[100, 0]}
-            opacity={[0, 1]}
-            delay={animejs.stagger(200)}
-            duration={800}
-            easing='easeInOutQuad'
-          >
+          <FadeUpList>
             {jobData.map(job => <Job key={job.company} data={job} />)}
-          </Anime>
+          </FadeUpList>
         </Item.Group>
-      </Anime>
+      </FadeIn>
     </div>
   )
 }
@@ -35,7 +26,7 @@ function Jobs(props) {
 function Job(props) {
   let { data } = props
   return (
-    <Segment raised style={{marginTop: '20px'}}>
+    <Segment raised >
       <Item>
         <Segment basic clearing>
           <Item.Image src={assets(data.image)} floated='left' size='small' circular bordered />

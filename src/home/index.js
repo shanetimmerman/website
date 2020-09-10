@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container, Header, Grid, Image, Segment, Icon } from 'semantic-ui-react';
-import Anime from 'react-anime'
-import animejs from 'animejs'
 
 import profilePhoto from './assets/profile_photo.jpg'
 // import {ReactComponent as Signature} from './assets/name.svg'
 import Signature from './signature'
+import FadeIn from '../components/animations/fade_in';
+import FadeUp from '../components/animations/fade_up';
 
 function Home() {
   return (
@@ -14,11 +14,7 @@ function Home() {
 
       <Container className='homeContainer' text textAlign='center'>
         <Signature /> 
-          <Anime
-            opacity={[0, 1]}
-            duration={2000}
-            easing='easeInOutQuad'
-          >
+          <FadeIn delay={0} duration={2000}>
             <Segment raised>
               <Grid columns={2} stackable relaxed>
                   <Grid.Column>
@@ -41,32 +37,20 @@ function Home() {
                   </Grid.Column>
                 </Grid>
             </Segment>
-          </Anime>
+          </FadeIn>
         <Segment basic>
-          <Anime
-            opacity={[0, 1]}
-            translateY={[100, 0]}
-            duration={2000}
-            delay={1000}
-            easing='easeInOutQuad'
-          >
+          <FadeUp delay={1000} duration={2000}>
             <Header className='myLink' floated='left' href='https://www.linkedin.com/in/shanetimmerman/' target='_blank' rel='noopener noreferrer' as='a'>
               <Icon name='linkedin' />
               shanetimmerman
             </Header>
-          </Anime>
-          <Anime
-            opacity={[0, 1]}
-            translateY={[100, 0]}
-            duration={2000}
-            delay={1200}
-            easing='easeInOutQuad'
-          >
+          </FadeUp>
+          <FadeUp delay={1200} duration={2000}>
             <Header className='myLink' floated='right' href='https://github.com/shanetimmerman' target='_blank' rel='noopener noreferrer' as='a'>
               <Icon name='github square' />
               shanetimmerman
             </Header>
-          </Anime>
+          </FadeUp>
         </Segment>
       </Container>
     </Container>

@@ -1,39 +1,25 @@
 import React from 'react'
-import Anime from 'react-anime'
 import courseData from './data/courses.json'
 import { Header, Segment} from 'semantic-ui-react'
+import FadeIn from '../components/animations/fade_in.js'
+import FadeUp from '../components/animations/fade_up.js'
 
 function CourseWork(props) {
   return (
     <div {...props}>
-      <Anime
-        opacity={[0, 1]}
-        duration={800}
-        easing='easeInOutQuad'
-        delay={props.delay}
-      >
-        <Anime
-          translateY={[50, 0]}
-          duration={800}
-          easing='easeInOutQuad'
-          delay={props.delay}
-        >
+      <FadeIn delay={props.delay}>
+        <FadeUp distance={50} delay={props.delay} >
           <Header textAlign='center' as='h2'>Coursework</Header>
-        </Anime>
-        <Anime
-          translateY={[100, 0]}
-          delay={props.delay}
-          duration={800}
-          easing='easeInOutQuad'
-        >
-          <Segment raised style={{marginTop: '20px'}}>
+        </FadeUp>
+        <FadeUp delay={props.delay}>
+          <Segment raised >
             <Header as='h3'>Computer Science Courses</Header>
             {courseData.relevant.map(course => <p key={course}>{course}</p>)}
             <Header as='h3'>Additional Courses</Header>
           {courseData.additional.map(course => <p key={course}>{course}</p>)}
           </Segment>
-        </Anime>
-      </Anime>
+        </FadeUp>
+      </FadeIn>
     </div>
   )
 }

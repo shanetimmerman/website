@@ -1,37 +1,23 @@
 import React from 'react'
-import Anime from 'react-anime'
 import { Header, Segment, Item, List, Grid } from 'semantic-ui-react'
 
 import skillData from './data/skills.json'
+import FadeIn from '../components/animations/fade_in.js'
+import FadeUp from '../components/animations/fade_up.js'
 
 function Skills(props) {
   return (
     <div className='resumeContent' {...props}>
-      <Anime
-        opacity={[0, 1]}
-        duration={800}
-        easing='easeInOutQuad'
-        delay={props.delay}
-      >
-        <Anime
-          translateY={[50, 0]}
-          duration={800}
-          easing='easeInOutQuad'
-          delay={props.delay}
-        >
+      <FadeIn delay={props.delay} >
+        <FadeUp distance={50} delay={props.delay} >
           <Header textAlign='center' as='h2'>Skills</Header>
-        </Anime>
-        <Anime
-            translateY={[100, 0]}
-            delay={props.delay}
-            duration={800}
-            easing='easeInOutQuad'
-        >
-          <Segment raised style={{marginTop: '20px'}}>
+        </FadeUp>
+        <FadeUp delay={props.delay} >
+          <Segment raised >
             {skillData.map(domain => <Domain key={domain.domain} data={domain} />)}
           </Segment>
-        </Anime>
-      </Anime>
+        </FadeUp>
+      </FadeIn>
     </div>
   )
 }

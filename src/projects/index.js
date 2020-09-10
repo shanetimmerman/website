@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 
 import { Container, Header, Item, Segment, Label, Modal } from 'semantic-ui-react'
 
-import Anime from 'react-anime'
-import anime from 'animejs'
+import FadeUpList from '../components/animations/fade_up_list'
 
 import projectData from './projects'
 import HoverRaisedSegment from '../components/HoverRaisedSegment'
@@ -20,15 +19,9 @@ function Projects() {
         tears. Click on the ear tab on any project to see the source code on Github!
       </Container>
       <Item.Group>
-      <Anime
-          translateY={[100, 0]}
-          opacity={[0, 1]}
-          delay={anime.stagger(200)}
-          duration={800}
-          easing='easeInOutQuad'
-      >
+      <FadeUpList duration={800}>
         {projectData.map(project => <Project key={project.title} data={project} />)}
-      </Anime>
+      </FadeUpList>
       </Item.Group>
     </Container>
   );
@@ -55,7 +48,7 @@ function Project(props) {
   )
   
   return data.more ? (
-    <HoverRaisedSegment clearing style={{marginBottom: '20px'}}>
+    <HoverRaisedSegment clearing >
       <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
       <Modal 
           trigger={content}
@@ -64,40 +57,11 @@ function Project(props) {
         />
     </HoverRaisedSegment>
   ) : (
-    <Segment clearing style={{marginBottom: '20px'}}>
+    <Segment clearing >
       <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
       {content}
     </Segment>
   )
 }
-
-function ShowContentHover(props) {
-  let [hover, setHover] = useState(false)
-  let mouseEntered = () => setHover(true)
-  let mouseLeft = ()=> setHover(false)
-  let { data } = props
-
-  let clickToSeeMore = data.more ? (
-    <Segment basic textAlign='center' style={{marginTop: '-5px'}}>
-      <Header color='grey' as='h5'>- Click to find out more - </Header>
-    </Segment>
-  ) : ""
-  return (
-    <Segment raised={hover && props.raised} onMouseEnter={mouseEntered} onMouseLeave={mouseLeft} {...props} style={{transition: 'height 0.5s'}}>
-      <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
-      <Item style={{transition: 'height 0.5s'}}>
-        <Item.Image src={assets(data.image)} size='tiny' circular bordered floated='left' style={{transition: 'height 0.5s'}}/>
-        <Item.Content style={{transition: 'height 0.5s'}}>
-          <Item.Header as='h2'>{data.title}</Item.Header>
-          { hover ? (<div>
-          <Item.Description content={data.summary}/>
-          {clickToSeeMore}
-          </div>)
-            : '' }
-        </Item.Content>
-      </Item>
-    </Segment>
-  )
-};
 
 export default Projects;
