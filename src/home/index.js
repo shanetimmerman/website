@@ -17,8 +17,8 @@ function Home() {
           <Anime
             // translateY={[50, 0]}
             opacity={[0, 1]}
-            duration={800}
-            delay={500}
+            duration={2000}
+            // delay={500}
             easing='easeInOutQuad'
           >
             <Segment raised>
