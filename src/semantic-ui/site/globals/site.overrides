@@ -38,22 +38,3 @@ div.modal > div.container {
   left: 0;
   z-index: -100;
 }
-
-.path {
-  animation: stroke_fill 3s linear forwards;
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-}
-@keyframes stroke_fill {
-  0% {
-    fill: white;
-  }
-  80% {
-    fill: white;
-    stroke-dashoffset: 0;
-  }
-  100% {
-    fill: black;
-    stroke-dashoffset: 0;
-  }
-}

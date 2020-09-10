@@ -14,7 +14,7 @@ function Home() {
 
       <Container className='homeContainer' text textAlign='center'>
         <Signature /> 
-          <FadeIn delay={0} duration={2000}>
+          <FadeIn delay={500} duration={2000}>
             <Segment raised>
               <Grid columns={2} stackable relaxed>
                   <Grid.Column>
@@ -39,13 +39,13 @@ function Home() {
             </Segment>
           </FadeIn>
         <Segment basic>
-          <FadeUp delay={1000} duration={2000}>
+          <FadeUp delay={1500} duration={2000}>
             <Header className='myLink' floated='left' href='https://www.linkedin.com/in/shanetimmerman/' target='_blank' rel='noopener noreferrer' as='a'>
               <Icon name='linkedin' />
               shanetimmerman
             </Header>
           </FadeUp>
-          <FadeUp delay={1200} duration={2000}>
+          <FadeUp delay={1700} duration={2000}>
             <Header className='myLink' floated='right' href='https://github.com/shanetimmerman' target='_blank' rel='noopener noreferrer' as='a'>
               <Icon name='github square' />
               shanetimmerman
