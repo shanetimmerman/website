@@ -39,15 +39,21 @@ div.modal > div.container {
   z-index: -100;
 }
 
-
 .path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 5s linear forwards;
+  animation: stroke_fill 4.5s linear forwards;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
 }
-
-@keyframes dash {
-  to {
+@keyframes stroke_fill {
+  0% {
+    fill: white;
+  }
+  80% {
+    fill: white;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    fill: black;
     stroke-dashoffset: 0;
   }
 }
