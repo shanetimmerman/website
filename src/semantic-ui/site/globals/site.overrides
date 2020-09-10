@@ -40,7 +40,7 @@ div.modal > div.container {
 }
 
 .path {
-  animation: stroke_fill 4.5s linear forwards;
+  animation: stroke_fill 3s linear forwards;
   stroke-dasharray: 500;
   stroke-dashoffset: 500;
 }
