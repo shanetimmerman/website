@@ -48,3 +48,9 @@ div.modal > div.container {
   z-index: 100;
   position: relative;
 }
+
+.project {
+  height: '50px';
+  overflow: hidden;
+  box-sizing: unset;
+}

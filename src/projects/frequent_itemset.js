@@ -80,7 +80,7 @@ function FrequencyItemset() {
       
       <Header as='h2'>Apriori Pruning</Header>
       <p>
-        Apriori pruning is a two step rpocess that is ujsed to reduce the size of the dataset to prevent factorial growth of large datasets. THe first step is to generate (k+1) size itemsets (in this case, movies) from the size (k) itemsets. The, the support, or number users who have watched all movies in the itemset, is calculated. If the number of users is above the defined threshold, then the association rule for that itemset are calculated and that itemset can be used to generate the next iteration itemsets.
+        Apriori pruning is a two step rpocess that is ujsed to reduce the size of the dataset to prevent factorial growth of large datasets. The first step is to generate (k+1) size itemsets (in this case, movies) from the size (k) itemsets. The, the support, or number users who have watched all movies in the itemset, is calculated. If the number of users is above the defined threshold, then the association rule for that itemset are calculated and that itemset can be used to generate the next iteration itemsets.
       </p>
       <Image src={aprioriPruningImage} />
       <p>

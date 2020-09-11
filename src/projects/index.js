@@ -7,6 +7,8 @@ import FadeUpList from '../components/animations/fade_up_list'
 import projectData from './projects'
 import HoverRaisedSegment from '../components/HoverRaisedSegment'
 
+import animejs from 'animejs'
+
 let assets = require.context('./assets', true)
 
 class Projects extends React.Component {
@@ -46,48 +48,59 @@ class Projects extends React.Component {
   }
 }
 
-function Project(props) {
-  let {data} = props
-  let clickToSeeMore = data.more ? (
-    <Container textAlign='center' style={{marginTop: '20px'}}>
-      <Header color='grey' as='h5'>- Click to find out more - </Header>
-    </Container>
-  ) : ""
+class Project extends React.Component {
+  onMouseEnter() {
+    animejs({
+      targets: '.project',
+      height: [100, 200],
+      duration: 500,
+      elasticity: 30
+    })
+  }
 
-  let content = (
-    <Item>
-      <Grid columns={2} verticalAlign='middle' >
-        <Grid.Column width={2}>
-          <Item.Image src={assets(data.image)} size='tiny' circular bordered floated='left'/>
-        </Grid.Column>
-        <Grid.Column width={14} >
-          <Item.Header as='h2' style={{marginLeft: '20px'}}>{data.title} </Item.Header> 
-        </Grid.Column>
-      </Grid>
-      <Item.Content>
-        <Segment basic>
-          <Item.Description content={data.summary}/>
-          { clickToSeeMore }
-        </Segment>
-      </Item.Content>
-    </Item>
-  )
-  
-  return data.more ? (
-    <HoverRaisedSegment clearing >
-      <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
-      <Modal 
-          trigger={content}
-          header={data.title}
-          content={data.more}
-        />
-    </HoverRaisedSegment>
-  ) : (
-    <Segment clearing >
-      <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
-      {content}
-    </Segment>
-  )
+  render() {
+    const { data } = this.props;
+    const clickToSeeMore = data.more ? (
+      <Container textAlign='center' style={{marginTop: '20px'}}>
+        <Header color='grey' as='h5'>- Click to find out more - </Header>
+      </Container>
+    ) : ""
+
+    const content = (
+      <Item className='project'>
+        <Grid columns={2} verticalAlign='middle' >
+          <Grid.Column width={2}>
+            <Item.Image src={assets(data.image)} size='tiny' circular bordered floated='left'/>
+          </Grid.Column>
+          <Grid.Column width={14} >
+            <Item.Header as='h2' style={{marginLeft: '20px'}}>{data.title} </Item.Header> 
+          </Grid.Column>
+        </Grid>
+        <Item.Content>
+          <Segment basic>
+            <Item.Description content={data.summary}/>
+            { clickToSeeMore }
+          </Segment>
+        </Item.Content>
+      </Item>
+    )
+    
+    return data.more ? (
+      <HoverRaisedSegment clearing >
+        <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
+        <Modal 
+            trigger={content}
+            header={data.title}
+            content={data.more}
+          />
+      </HoverRaisedSegment>
+    ) : (
+      <Segment clearing >
+        <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
+        {content}
+      </Segment>
+    )
+  }
 }
 
 export default Projects;

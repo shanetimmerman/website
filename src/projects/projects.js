@@ -7,14 +7,6 @@ import Recursion from './recursion'
 
 export default [
   {
-    title: 'shanetimmerman.com',
-    git: 'https://github.com/shanetimmerman/website',
-    dates: '2019',
-    summary: 'I figured it was about time I make myself a webstite. Written in React and Semantic UI, this site provides me the ability to delve deeper into front end development, as well as provide some interesting ways to display and visualize some results from previous projects. It also provides a platform for any future web-apps I develop, so look out for those!',
-    image: './shanetimmerman_icon.png',
-    more: <Recursion />,
-  },
-  {
     title: 'Netflix Recommendation through Apriori Frequency Itemset Mining',
     git: 'https://github.com/shanetimmerman/apriori-frequent-itemset-mining',
     dates: '2019',
@@ -37,6 +29,14 @@ export default [
     summary: 'Final project for CS 2950 Introduction to Computer Science Research. Aimed to extend the Diffuse Concurrent Neural Network from (Li et al. 2017) to include weather prediciton data to challange the prior that traffic patterns are a closed system.Project incomplete within the allotted course time. The model was written primarily by liyaguang, with slight modifications to enable weather data ingestion, and was composed in PyTorch.',
     image: './dcrnn_icon.png',
     more: <TrafficForcasting />
+  },
+  {
+    title: 'My Personal Website',
+    git: 'https://github.com/shanetimmerman/website',
+    dates: '2019',
+    summary: 'I figured it was about time I make myself a webstite. Written in React and Semantic UI, this site provides me the ability to delve deeper into front end development, as well as provide some interesting ways to display and visualize some results from previous projects. It also provides a platform for any future web-apps I develop, so look out for those!',
+    image: './shanetimmerman_icon.png',
+    more: <Recursion />,
   },
   {
     title: 'Santorini',
