@@ -75,12 +75,12 @@ function FrequencyItemset() {
         </CarouselProvider>
       </Segment>
       <p>
-        The application was run over 5 iterations with a support threshold of 15%, meaning that if a review pattern was not supported by 15% of the total population, it would be pruned.
+        The application was run over 5 iterations with a support threshold of 15%, meaning that if a review pattern was not supported by 15% of the total population, it would be pruned. For instance, if only 12% of individuals had reviewed both the movies Shrek and Saving Private Ryan, we would not analyse potential suggestions based on those 2 movies.
       </p>
       
       <Header as='h2'>Apriori Pruning</Header>
       <p>
-        Apriori pruning is a two step rpocess that is ujsed to reduce the size of the dataset to prevent factorial growth of large datasets. The first step is to generate (k+1) size itemsets (in this case, movies) from the size (k) itemsets. The, the support, or number users who have watched all movies in the itemset, is calculated. If the number of users is above the defined threshold, then the association rule for that itemset are calculated and that itemset can be used to generate the next iteration itemsets.
+        Apriori pruning is a two step process that is used to reduce the size of the dataset to prevent factorial growth of large datasets. The first step is to generate (k+1) size itemsets (in this case, movies) from the size (k) itemsets. The, the support, or number users who have watched all movies in the itemset, is calculated. If the number of users is above the defined threshold, then the association rule for that itemset are calculated and that itemset can be used to generate the next iteration itemsets.
       </p>
       <Image src={aprioriPruningImage} />
       <p>
