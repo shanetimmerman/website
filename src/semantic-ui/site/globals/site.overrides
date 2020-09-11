@@ -75,3 +75,8 @@ div.modal > div.container {
 .resumeItemBottom, .resumeItemBottom.ui.items:last-child {
   margin-top: 0px;
 }
+
+.ui.segment.resumeProficiencyContainer {
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
