@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {createRef} from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,7 +6,7 @@ import {
   Link,
   useLocation
 } from 'react-router-dom';
-import { Menu, } from 'semantic-ui-react'
+import { Menu, Sticky } from 'semantic-ui-react'
 
 import Resume from './resume/index.js'
 import Home from './home/index.js'
@@ -21,34 +21,40 @@ let navBar = [
 ]
 
 
-function WebRouter() {
-  return (
-    <Router basename={process.env.PUBLIC_URL}>
-      <div>
-        <NavMenu />
-        <Switch>
-          <Route path='/resume'>
-            <Resume />
-          </Route>
-          <Route path='/projects'>
-            <Projects />
-          </Route>
-          <Route path='/pics/'>
-            <Pics />
-          </Route>
-          <Route path='/'>
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
+class WebRouter extends React.Component {
+  contextRef = createRef()
+
+  render() {
+    return (
+      <Router basename={process.env.PUBLIC_URL}>
+        <div ref={this.contextRef}>
+          <Sticky context={this.contextRef}>
+            <NavMenu />
+          </Sticky>
+          <Switch>
+            <Route path='/resume'>
+              <Resume />
+            </Route>
+            <Route path='/projects'>
+              <Projects />
+            </Route>
+            <Route path='/pics/'>
+              <Pics />
+            </Route>
+            <Route path='/'>
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
 }
 
 function NavMenu() {
   const location = useLocation()
   return (
-    <Menu style={{ marginBottom: '0px' }} raised>
+    <Menu raised attached='top'>
       <Menu.Menu items={navBar} position='right'>
         {navBar.map(props => (
           <Menu.Item as={Link} to={props.to} key={`menu_${props.name}_item`} active={location.pathname === props.to}>
