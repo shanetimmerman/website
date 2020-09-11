@@ -25,6 +25,7 @@ class WebRouter extends React.Component {
   contextRef = createRef()
 
   render() {
+    console.log('publicURL', process.env.PUBLIC_URL);
     return (
       <Router basename={process.env.PUBLIC_URL}>
         <div ref={this.contextRef}>
@@ -53,6 +54,7 @@ class WebRouter extends React.Component {
 
 function NavMenu() {
   const location = useLocation()
+  console.log('location', location);
   return (
     <Menu raised attached='top'>
       <Menu.Menu items={navBar} position='right'>
