@@ -53,7 +53,6 @@ class WebRouter extends React.Component {
 
 function NavMenu() {
   const location = useLocation()
-  console.log('location', location);
   return (
     <Menu raised attached='top'>
       <Menu.Menu items={navBar} position='right'>
