@@ -26,7 +26,7 @@ class WebRouter extends React.Component {
 
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename={process.env.NODE_ENV === 'development' ? '' : 'https://www.shanetimmerman.com'}>
         <div ref={this.contextRef}>
           <Sticky context={this.contextRef}>
             <NavMenu />
