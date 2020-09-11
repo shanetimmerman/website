@@ -6,6 +6,7 @@ import FadeUpList from '../components/animations/fade_up_list'
 
 import projectData from './projects'
 import HoverRaisedSegment from '../components/HoverRaisedSegment'
+import PageContainer from '../components/page_container'
 
 import animejs from 'animejs'
 
@@ -16,7 +17,7 @@ class Projects extends React.Component {
 
   render() {
     return (
-      <Container >
+      <PageContainer >
         <Grid columns={2} stackable>
           <Grid.Column  width={5}>
             <Ref innerRef={this.contextRef}>
@@ -43,7 +44,7 @@ class Projects extends React.Component {
             </Item.Group>
           </Grid.Column>
         </Grid>      
-      </Container>
+      </PageContainer>
     );
   }
 }

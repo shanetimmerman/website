@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container, Header, Grid } from 'semantic-ui-react'
+import { Header, Grid } from 'semantic-ui-react'
+import PageContainer from '../components/page_container'
 
 import Jobs from './jobs.js'
 import Skills from './skills.js'
@@ -8,7 +9,7 @@ import CourseWork from './coursework.js'
 
 function Resume() {
   return (
-    <Container>
+    <PageContainer>
       <Header textAlign='center' as='h1'>Resume</Header>
       <Grid divided="vertically" relaxed="very" stackable columns={2}>
         <Grid.Column className='resumeColumn' width={8}>
@@ -20,7 +21,7 @@ function Resume() {
           <Skills delay={700}/>
         </Grid.Column>
       </Grid>
-    </Container>
+    </PageContainer>
   );
 }
 

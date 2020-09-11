@@ -8,10 +8,11 @@ import profilePhoto from './assets/profile_photo.jpg'
 import Signature from './signature'
 import FadeIn from '../components/animations/fade_in';
 import FadeUp from '../components/animations/fade_up';
+import PageContainer from '../components/page_container'
 
 function Home() {
   return (
-    <Container fluid>
+    <PageContainer fluid>
       <Background />
       <Container className='homeContainer' text textAlign='center'>
         <Signature /> 
@@ -54,7 +55,7 @@ function Home() {
           </FadeUp>
         </Segment>
       </Container>
-    </Container>
+    </PageContainer>
   );
 }
 
