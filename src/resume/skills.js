@@ -30,7 +30,7 @@ function Domain(props) {
       <Grid columns={2} relaxed='very'>
         <Grid.Column>
           <Segment basic vertical>
-            <Header as='h4'><i>Proficient with</i></Header>
+            <Header as='h4' className='resumeProficiencyLabel'><i>Proficient with</i></Header>
             <List bulleted>
               {data.proficient.map(skill => <List.Item key={skill}>{skill}</List.Item>)}
             </List>
@@ -38,7 +38,7 @@ function Domain(props) {
         </Grid.Column>
         <Grid.Column>
           <Segment basic vertical>
-            <Header as='h4'><i>Familiar with</i></Header>
+            <Header as='h4' className='resumeProficiencyLabel'><i>Familiar with</i></Header>
             <List bulleted>
               {data.familiar.map(skill => <List.Item key={skill}>{skill}</List.Item>)}
             </List>
@@ -72,7 +72,7 @@ function Domain(props) {
   return (
     <Item>
       <Segment basic>
-        <Item.Header as='h3'>{data.domain}</Item.Header>
+        <Item.Header as='h3' className='resumeSkillDomain'>{data.domain}</Item.Header>
         {skills}
       </Segment>
     </Item>

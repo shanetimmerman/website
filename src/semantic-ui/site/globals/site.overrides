@@ -55,6 +55,23 @@ div.modal > div.container {
   box-sizing: unset;
 }
 
-.courseName {
+.resumeCourseName {
   margin-top: -12px;
+}
+
+.resumeSkillDomain {
+  margin-bottom: 10px;
+}
+
+.resumeProficiencyLabel {
+  margin-bottom: 0px;
+  margin-top: 0px
+}
+
+.resumeItemTop, .resumeItemTop.ui.segment {
+  margin-bottom: 0px;
+}
+
+.resumeItemBottom, .resumeItemBottom.ui.items:last-child {
+  margin-top: 0px;
 }

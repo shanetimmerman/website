@@ -30,12 +30,12 @@ function School({data}) {
   return (
     <Segment raised >
       <Item>
-        <Segment basic clearing>
+        <Segment basic clearing className='resumeItemTop'>
           <Item.Image src={assets(data.image)} floated='left' size='small' circular bordered />
           <Item.Header as='h1'>{data.school}</Item.Header>
           <Item.Meta as='h3'>{data.location}</Item.Meta>
         </Segment>
-        <Item>
+        <Item className='resumeItemBottom'>
           { data.college ? (<Item.Content as='h3'>{data.college}</Item.Content>): null }
           <Item.Header as='h5' style={{marginTop: '-5px'}}>{data.degree}</Item.Header>
           <Item.Header as='h4' style={{marginTop: '-5px'}}>{data.graduationDate}</Item.Header>

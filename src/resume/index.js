@@ -11,11 +11,11 @@ function Resume() {
   return (
     <PageContainer>
       <Header textAlign='center' as='h1'>Resume</Header>
-      <Grid divided="vertically" relaxed="very" stackable columns={2}>
-        <Grid.Column className='resumeColumn' width={8}>
+      <Grid divided="vertically" relaxed="very" stackable columns={2} even>
+        <Grid.Column className='resumeColumn'>
             <Jobs delay={0}/>
         </Grid.Column>
-        <Grid.Column  className='resumeColumn' width={8}>
+        <Grid.Column  className='resumeColumn'>
           <Education delay={100} />
           <CourseWork delay={500} />
           <Skills delay={700}/>

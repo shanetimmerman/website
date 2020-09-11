@@ -28,12 +28,12 @@ function Job(props) {
   return (
     <Segment raised >
       <Item>
-        <Segment basic clearing>
+        <Segment basic clearing className='resumeItemTop'>
           <Item.Image src={assets(data.image)} floated='left' size='small' circular bordered />
           <Item.Header as='h1'>{data.company}</Item.Header>
           <Item.Meta as='h3'>{data.location}</Item.Meta>
         </Segment>
-        <Item.Group divided>
+        <Item.Group divided className='resumeItemBottom'>
           {data.roles.map(position => <Position key={position.title} data={position} className='resumeJobsPosition'/>)}
         </Item.Group>
       </Item>
