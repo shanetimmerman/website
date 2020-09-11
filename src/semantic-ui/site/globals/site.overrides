@@ -54,3 +54,7 @@ div.modal > div.container {
   overflow: hidden;
   box-sizing: unset;
 }
+
+.courseName {
+  margin-top: -12px;
+}

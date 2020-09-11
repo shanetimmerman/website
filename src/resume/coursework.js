@@ -14,9 +14,9 @@ function CourseWork(props) {
         <FadeUp delay={props.delay}>
           <Segment raised >
             <Header as='h3'>Computer Science Courses</Header>
-            {courseData.relevant.map(course => <p key={course}>{course}</p>)}
+            {courseData.relevant.map(course => <p className='courseName' key={course}>{course}</p>)}
             <Header as='h3'>Additional Courses</Header>
-          {courseData.additional.map(course => <p key={course}>{course}</p>)}
+          {courseData.additional.map(course => <p className='courseName' key={course}>{course}</p>)}
           </Segment>
         </FadeUp>
       </FadeIn>

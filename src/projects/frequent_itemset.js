@@ -1,6 +1,6 @@
 import React from 'react'
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
-import { Item, Container, List, Table, Header, Image, Segment, Grid, Icon } from 'semantic-ui-react'
+import { Container, List, Table, Header, Image, Segment, Grid, Icon } from 'semantic-ui-react'
 import _ from 'lodash'
 
 import netflixRecommendations from './data/netflix_recomendations.json'
