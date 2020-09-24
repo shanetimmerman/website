@@ -86,7 +86,7 @@ class Project extends React.Component {
     )
     
     return data.more ? (
-      <HoverRaisedSegment clearing >
+      <HoverRaisedSegment clearing className='clickable' >
         {data.git ? <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' /> : null }
         <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
         <Modal 
