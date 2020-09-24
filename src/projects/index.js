@@ -23,13 +23,12 @@ class Projects extends React.Component {
             <Ref innerRef={this.contextRef}>
               <Rail >
                 <Sticky context={this.contextRef}  offset={200}>
-                  <Header textAlign='center' as='h1'>Projects</Header>
-                  <p >
+                  <Header textAlign='center' as='h1' className='light'>Projects</Header>
+                  <p className='light'>
                     Here's some of the things I've made in recent years. Some of it's good, 
                     some of it's less good, all of it is made with love and blood and sweat and 
                     tears. 
-                  </p>
-                  <p>
+                    <br /> 
                     Click on the ear tab on any project to see the source code on Github!
                   </p>
                 </Sticky>
@@ -63,7 +62,7 @@ class Project extends React.Component {
     const { data } = this.props;
     const clickToSeeMore = data.more ? (
       <Container textAlign='center' style={{marginTop: '20px'}}>
-        <Header color='grey' as='h5'>- Click to find out more - </Header>
+        <Header as='h5' className='muted' color='grey'>- Click to find out more - </Header>
       </Container>
     ) : ""
 
@@ -88,6 +87,7 @@ class Project extends React.Component {
     
     return data.more ? (
       <HoverRaisedSegment clearing >
+        {data.git ? <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' /> : null }
         <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
         <Modal 
             trigger={content}
@@ -97,7 +97,7 @@ class Project extends React.Component {
       </HoverRaisedSegment>
     ) : (
       <Segment clearing >
-        <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' />
+        { data.git ? <Label as='a' href={data.git} target='_blank' rel='noopener noreferrer' corner='right' icon='github' size='big' /> : null }
         {content}
       </Segment>
     )

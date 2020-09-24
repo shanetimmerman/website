@@ -4,8 +4,16 @@ import FrequencyItemset from './frequent_itemset'
 import Stutor from './stutor'
 import TrafficForcasting from './traffic_forcasting'
 import Recursion from './recursion'
+import BabyBox from './babybox'
 
 export default [
+  {
+    title: 'Baby Box',
+    dates: '2020',
+    summary: 'mHealth approach to prenatal care, providing more autonomy to woman living in "maternity care deserts". This is the partner application for at home testing solution for common prenatal screenings. This is actively being worked on, so please mind the appearance.',
+    image: './babybox.png',
+    more: <BabyBox />
+  },
   {
     title: 'Netflix Recommendation through Apriori Frequency Itemset Mining',
     git: 'https://github.com/shanetimmerman/apriori-frequent-itemset-mining',
