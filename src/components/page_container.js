@@ -6,7 +6,7 @@ export default function PageContainer(props) {
   return (
     <div>
       <ScrollToTop />
-      <Container {...props} />
+      <Container className='pageContainer' {...props} />
     </div>
   )
 }

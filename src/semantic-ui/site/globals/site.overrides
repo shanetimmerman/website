@@ -8,19 +8,11 @@
   left: 0;
   overflow: hidden;
 }
-
-.homeBackground {
-  background-image:url('../../../home/assets/background_cropped.gif');
-  background-size: cover;
-  height: 100vh;
-  padding:0;
-  margin:0;
-  overflow-y: hidden;
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+/* 
+h1, h2, h3, .header {
+  font-family: futura;
+  font-weight: 400;
+} */
 
 div.menu + div.container {
   padding-top: 20px; 
@@ -35,13 +27,13 @@ div.modal > div.container {
   margin-bottom: 20px;
 }
 
-.background {
+/* .background {
   color: #999999;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -100;
-}
+} */
 
 .ui.top.attached.menu {
   margin-bottom: 20px;
@@ -83,4 +75,86 @@ div.modal > div.container {
 
 .clickable {
   cursor: pointer;
+}
+
+.navMenu {
+  padding: 20px;
+}
+
+.ui.attached.menu.navMenu:not(.tabular) {
+  border: none;
+}
+
+.ui.text.menu.navMenu {
+  background: @pageBackground;
+}
+
+.ui.fixed > .ui.text.menu.navMenu {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.projectContainer {
+  text-align: center;
+  min-width: 250px;
+  max-width: 400px;
+  margin: 2px;
+  flex-basis: 31%
+}
+
+.projectTitle {
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+}
+
+.projectContainer:hover > .projectImage {
+  filter: alpha(opacity=80);
+  opacity: .8;
+}
+
+.projectGrid {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px 15px;
+}
+
+.myLink {
+  color: black;
+  margin: 0 0 20px 20px;
+}
+
+.myLink * {
+  display: inline-block;
+}
+
+.myLink:hover {
+  color: black;
+}
+
+.myLinkText {
+  text-decoration: underline;
+  text-decoration-color: darkgrey;
+}
+
+.myLink:hover .myLinkText{
+  text-decoration-color: black;
+  color: grey;
+}
+
+.ui.container.pageContainer {
+  padding-bottom: 50px;
+}
+
+a.ui.label.corner .icon {
+  cursor: pointer;
+}
+
+.projectModalHeader {
+  padding-top: 50px;
 }

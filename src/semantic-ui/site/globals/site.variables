@@ -3,7 +3,9 @@
 *******************************/
 
 @primaryColor : #002f4e;
+// @pageBackground : #eff0f1;
 @pageBackground : #eff0f1;
+// @background: #ffffff;
 
 @emSize: 18px;
 @fontSize : 18px;

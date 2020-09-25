@@ -8,14 +8,14 @@ import BabyBox from './babybox'
 
 export default [
   {
-    title: 'Baby Box',
+    title: 'BabyBox',
     dates: '2020',
     summary: 'mHealth approach to prenatal care, providing more autonomy to woman living in "maternity care deserts". This is the partner application for at home testing solution for common prenatal screenings. This is actively being worked on, so please mind the appearance.',
     image: './babybox.png',
     more: <BabyBox />
   },
   {
-    title: 'Netflix Recommendation through Apriori Frequency Itemset Mining',
+    title: 'Frequency Itemset Mining Netflix Recommendations',
     git: 'https://github.com/shanetimmerman/apriori-frequent-itemset-mining',
     dates: '2019',
     summary: 'MapReduce program to do Frequent Itemset Mining on the 2009 Netflix prize data, using association rules as a proxy for movie recommendation, much like Youtube did in its early days. The algorithm uses an apriori based approach, translated into iterative MapReduce jobs written in Java run in AWS EMR.',
@@ -54,18 +54,18 @@ export default [
     image: './santorini_box_art.png',
   },
   {
-    title: 'Swim Web App',
+    title: 'Swim League Manager',
     git: 'https://github.com/shanetimmerman/swim_web_app',
     dates: '2019',
     summary: 'Web application for managing a swim league developed as a final project for CS 3200 Database Design. It enables control over teams, coaches, swim leagues, individual swimmers, meets, races, and records. While the UI is simplistic, the exposed API provides a system for mass data ingrestion to help facilitate league management. The project uses MySQL as its DBSM, and has a SpringBoot backend with a React and Bootstrap client.',
-    image: './my_sql_icon.jpg'
+    image: './swim_league_manager_icon.png'
   },
   {
-    title: 'Task Tracker',
+    title: 'Minimalist Task Tracker',
     git: 'https://github.com/shanetimmerman/task_tracker_single_page_app',
     dates: '2018',
     summary: 'A minimalistic task tracker web application. Users can easily view and manage their unfinished tasks, create new ones for themselves or teammates, and edit timeslines and associated tasks. The application is written in Elixir and React, using the Phoenix framework and Redux, and a Boostrap UI, and uses PostreSQL to manage the data.',
-    image: './phoenix_icon.png',
+    image: './task_tracker_icon.png',
   },
   {
     title: 'Spotify Desktop Genius',

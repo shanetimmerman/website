@@ -12,12 +12,13 @@ import Resume from './resume/index.js'
 import Home from './home/index.js'
 import Projects from './projects/index.js'
 import Pics from './pics/index.js'
+import Signature from './home/signature'
 
 let navBar = [
-  { name:'Home', key:'home', as:Link, to:'/'},
-  { name:'Projects', key:'projects', as:Link, to:'/projects'},
-  { name:'Resume', key:'resume', as:Link, to:'/resume'},
-  { name: 'Pics', key:'pics', as:Link, to:'/pics'}
+  { name: 'ABOUT', key:'home', as:Link, to:'/'},
+  { name: 'PROJECTS', key:'projects', as:Link, to:'/projects'},
+  { name: 'RESUME', key:'resume', as:Link, to:'/resume'},
+  { name: 'PICS', key:'pics', as:Link, to:'/pics'}
 ]
 
 
@@ -54,7 +55,8 @@ class WebRouter extends React.Component {
 function NavMenu() {
   const location = useLocation()
   return (
-    <Menu raised attached='top'>
+    <Menu className='navMenu' attached='top' text>
+      <Signature/>
       <Menu.Menu items={navBar} position='right'>
         {navBar.map(props => (
           <Menu.Item as={Link} to={props.to} key={`menu_${props.name}_item`} active={location.pathname === props.to}>

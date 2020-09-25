@@ -1,76 +1,59 @@
 import React from 'react';
-import { Container, Header, Grid, Image, Segment, Icon } from 'semantic-ui-react';
+import { Container, Grid, Image, Icon } from 'semantic-ui-react';
 
-import background from './assets/background_cropped.gif'
-import profilePhoto from './assets/profile_photo.jpg'
+import profilePhoto from './assets/thats me.jpg'
 
-// import {ReactComponent as Signature} from './assets/name.svg'
-import Signature from './signature'
-import FadeIn from '../components/animations/fade_in';
-import FadeUp from '../components/animations/fade_up';
 import PageContainer from '../components/page_container'
 
 function Home() {
   return (
-    <PageContainer fluid>
-      <Background />
-      <Container className='homeContainer' text textAlign='center'>
-        <Signature /> 
-        <FadeIn delay={500} duration={2000}>
-          <Segment raised>
-            <Grid columns={2} stackable relaxed>
-                <Grid.Column>
-                  <Image src={profilePhoto} />
-                  <p>This is me ^</p>
-                </Grid.Column>
-                <Grid.Column textAlign='justified'>
-                  <p>
-                    I'm a tinkerer interested in exploring how software can help
-                    enable people!
-                    <br />
-                    <br />
-                    Current interests include photography, cooking, breadbaking,
-                    piano, yoga, and film!
-                    <br />
-                    <br />
-                    This site is very much in progress, so please mind the 
-                    appearance and watch out for new updates!
+    <PageContainer fluid style={{ paddingBottom: 0 }}>
+      <Container className='homeContainer' textAlign='center'>
+        <Grid columns={2} stackable relaxed>
+            <Grid.Column>
+              <Image src={profilePhoto} size='large'/>
+              <p>This is me ^</p>
+            </Grid.Column>
+            <Grid.Column textAlign='justified'>
+              <h2> Hey there friend</h2>
+              <p>
+                My name is Shane Timmerman, and for the most part I work in 
+                software development. I'm interested in exploring how software
+                can help enable people. Whether it be increasing access to 
+                healthcare information, allowing people to digest data more 
+                efficiently, or really just being able to so anything they 
+                otherwise couldn't.
+                <br />
+                <br />
+                Outside of CS, I'm exploring photography, yoga, cooking and 
+                sourdough baking. I am a hot beverage enthusiast (coffee and tea
+                are my too loves in life), and that's about all you need to know
+                about me!
+                <br />
+                <br />
+                You can also find me on any of the places here: 
+              </p>
+              <div>
+                <a className='myLink' href='https://www.linkedin.com/in/shanetimmerman/' target='_blank' rel='noopener noreferrer'>
+                  <Icon name='linkedin' size='large'  />
+                  <p className='myLinkText'>
+                    linkedin
                   </p>
-                </Grid.Column>
-              </Grid>
-          </Segment>
-        </FadeIn>
-        <Segment basic>
-          <FadeUp delay={1500} duration={2000}>
-            <Header className='myLink' floated='left' href='https://www.linkedin.com/in/shanetimmerman/' target='_blank' rel='noopener noreferrer' as='a'>
-              <Icon name='linkedin' />
-              shanetimmerman
-            </Header>
-          </FadeUp>
-          <FadeUp delay={1700} duration={2000}>
-            <Header className='myLink' floated='right' href='https://github.com/shanetimmerman' target='_blank' rel='noopener noreferrer' as='a'>
-              <Icon name='github square' />
-              shanetimmerman
-            </Header>
-          </FadeUp>
-        </Segment>
-      </Container>
+                </a>
+              </div>
+              <div>
+                <a className='myLink' href='https://github.com/shanetimmerman' target='_blank' rel='noopener noreferrer'>
+                  <Icon name='github square' size='large' />
+                  <p className='myLinkText'>
+                    github
+                  </p>
+                </a>
+              </div>
+            </Grid.Column>
+          </Grid>
+        </Container>
     </PageContainer>
   );
-}
-
-function Background() {
-  return <Image src={background} style={{ 
-    height: '100%',
-    objectFit: 'cover',
-    padding: 0,
-    margin: 0,
-    overflowY: 'hidden',
-    Zindex: -100,
-    position: 'absolute',
-    top: 0,
-    left: 0}}
-  />
 }
 
 export default Home;
