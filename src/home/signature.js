@@ -1,5 +1,5 @@
 import React, {} from 'react';
-import animejs from 'animejs'
+import animejs from 'animejs';
 
 class Signature extends React.Component {
   componentDidMount = () => {

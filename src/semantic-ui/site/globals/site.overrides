@@ -8,11 +8,6 @@
   left: 0;
   overflow: hidden;
 }
-/* 
-h1, h2, h3, .header {
-  font-family: futura;
-  font-weight: 400;
-} */
 
 div.menu + div.container {
   padding-top: 20px; 
@@ -104,6 +99,7 @@ div.modal > div.container {
 .projectTitle {
   text-transform: uppercase;
   margin-top: 10px;
+  font-size: 20px;
 }
 
 .projectImage {
@@ -158,3 +154,28 @@ a.ui.label.corner .icon {
 .projectModalHeader {
   padding-top: 50px;
 }
+
+.epilogueThin {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 100;
+}
+
+.epilogueExtraLight {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 200;
+}
+
+.epilogueLight {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 300;
+}
+
+.epilogueBlack {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 900;
+}
+
+.myName {
+  font-size: 48px;
+}
+

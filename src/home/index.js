@@ -15,7 +15,7 @@ function Home() {
               <p>This is me ^</p>
             </Grid.Column>
             <Grid.Column textAlign='justified'>
-              <h2> Hey there friend</h2>
+              <h2 className='epilogueLight'> Hey there friend</h2>
               <p>
                 My name is Shane Timmerman, and for the most part I work in 
                 software development. I'm interested in exploring how software

@@ -9,5 +9,6 @@
 
 @emSize: 18px;
 @fontSize : 18px;
-@fontName : 'Helvetica';
-@importGoogleFonts : false;
+@fontName : 'Nunito Sans';
+@fontWeight: 200;
+// @importGoogleFonts : false;

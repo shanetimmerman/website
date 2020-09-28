@@ -6,13 +6,13 @@ import {
   Link,
   useLocation
 } from 'react-router-dom';
-import { Menu, Sticky } from 'semantic-ui-react'
+import { Menu, Sticky, Container } from 'semantic-ui-react'
 
 import Resume from './resume/index.js'
 import Home from './home/index.js'
 import Projects from './projects/index.js'
 import Pics from './pics/index.js'
-import Signature from './home/signature'
+import Signature from './home/signature_sacramento'
 
 let navBar = [
   { name: 'ABOUT', key:'home', as:Link, to:'/'},
@@ -56,14 +56,18 @@ function NavMenu() {
   const location = useLocation()
   return (
     <Menu className='navMenu' attached='top' text>
-      <Signature/>
+      <Container>
+          <Signature/>
+        </Container>
       <Menu.Menu items={navBar} position='right'>
-        {navBar.map(props => (
-          <Menu.Item as={Link} to={props.to} key={`menu_${props.name}_item`} active={location.pathname === props.to}>
-            {props.name}
-          </Menu.Item>
-        ))}
-      </Menu.Menu>
+          {navBar.map(props => (
+            <Menu.Item as={Link} to={props.to} className='epilogueLight' key={`menu_${props.name}_item`} active={location.pathname === props.to}>
+              {props.name}
+            </Menu.Item>
+          ))}
+        </Menu.Menu>
+      
+     
     </Menu>
   )
 }

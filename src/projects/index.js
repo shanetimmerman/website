@@ -49,7 +49,7 @@ class Project extends React.Component {
     const content = (
       <div className='projectContainer clickable'>
         <Image className='projectImage' src={assets(data.image)} />
-        <p className='projectTitle'>{data.title}</p>
+        <p className='projectTitle epilogueLight'>{data.title}</p>
       </div>
     );
     const header =  (
