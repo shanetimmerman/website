@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "03012808c62e500da2a155f9f3353b64",
+    "revision": "af804e015d31f36043c894a26be7a29c",
     "url": "/index.html"
   },
   {
-    "revision": "57220110ae9865d43ef0",
+    "revision": "f8d390675d88c229a619",
     "url": "/static/css/2.936dc709.chunk.css"
   },
   {
-    "revision": "06081af8524cdf5d7970",
+    "revision": "dab9cba7a6e94dfc7aa6",
     "url": "/static/css/main.455df7c7.chunk.css"
   },
   {
-    "revision": "57220110ae9865d43ef0",
-    "url": "/static/js/2.39fa9e42.chunk.js"
+    "revision": "f8d390675d88c229a619",
+    "url": "/static/js/2.dc7d5a67.chunk.js"
   },
   {
     "revision": "182a7341d888ceed9c5ba961b259f080",
-    "url": "/static/js/2.39fa9e42.chunk.js.LICENSE"
+    "url": "/static/js/2.dc7d5a67.chunk.js.LICENSE"
   },
   {
-    "revision": "06081af8524cdf5d7970",
-    "url": "/static/js/main.450d67f8.chunk.js"
+    "revision": "dab9cba7a6e94dfc7aa6",
+    "url": "/static/js/main.e6eacee0.chunk.js"
   },
   {
     "revision": "a796a236ee8470d38315",
@@ -314,6 +314,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8d22e1d70db6e559a862b9b6fc83346f",
     "url": "/static/media/What Women Want.8d22e1d7.jpg"
+  },
+  {
+    "revision": "26bcadb2e1efdedb3533ee3de393a7f6",
+    "url": "/static/media/adobe-test.26bcadb2.svg"
   },
   {
     "revision": "f5839547e2f06cb46c0c7707c8a30c52",
