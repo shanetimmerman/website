@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 import { Menu, Container, Grid } from 'semantic-ui-react'
 
-import Signature from './signature_sacramento'
+import Signature from './signature_svg'
 
 let navBar = [
   { name: 'ABOUT', key:'home', as:Link, to:'/'},
@@ -20,10 +20,10 @@ function NavMenu() {
     <div id='navContainer'>
       <Container>
         <Grid columns={2} stackable>
-          <Grid.Column width={10}>
+          <Grid.Column width={8}>
             <Signature/>
           </Grid.Column>
-          <Grid.Column width={6} verticalAlign='middle'>
+          <Grid.Column width={8} verticalAlign='middle'>
             <Menu className='navMenu' text>
               <Menu.Menu items={navBar} position='right'>
                 {navBar.map(props => (
