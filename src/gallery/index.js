@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { Loader, } from 'semantic-ui-react'
 import PageContainer from '../components/page_container'
 import Gallery from 'react-photo-gallery';
 
@@ -12,7 +11,11 @@ class Pics extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      photos: [],
+      photos: [{
+        src: 'https://imgur.com/Lkbtiqo',
+        height: 360,
+        width: 540,
+      }],
     }
   }
 
@@ -29,20 +32,14 @@ class Pics extends React.Component {
       const photos = data.data.map(photo => (
         { src: photo.link, height: photo.height, width: photo.width }
       ));
-      console.log(photos)
       this.setState({ photos: photos })
     })
   }
 
   render() {
-    console.log(this.state.photos)
-    console.log(this.state.photos.length)
     return (
       <PageContainer textAlign='center'>
-        {/* { this.state.photos.length === 0 ? */}
-          <Gallery photos={this.state.photos} />  
-          {/* <Loader active /> */}
-        {/* } */}
+        <Gallery photos={this.state.photos} direction={'column'} />  
       </PageContainer>
     )
   }  
