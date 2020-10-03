@@ -14,10 +14,10 @@ function Resume() {
         <Grid.Column className='resumeColumn'>
             <Jobs delay={0}/>
         </Grid.Column>
-        <Grid.Column  className='resumeColumn'>
+        <Grid.Column className='resumeColumn'>
           <Education delay={100} />
-          <CourseWork delay={500} />
-          <Skills delay={700}/>
+          <Skills delay={500}/>
+          <CourseWork delay={700} />
         </Grid.Column>
       </Grid>
     </PageContainer>

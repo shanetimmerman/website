@@ -10,8 +10,15 @@ class Signature extends React.Component {
       strokeDashoffset: [animejs.setDashoffset, 0],
       easing: 'easeInOutQuad',
       duration: 500,
-      delay: animejs.stagger(100),
+      delay: animejs.stagger(100, { start: 300 }),
     });
+    animejs({
+      targets: '.cls-2',
+      strokeDashoffset: [animejs.setDashoffset, 0],
+      easing: 'easeInOutQuad',
+      duration: 500,
+      delay: animejs.stagger(100, { start: 1200 }),
+    })
   }
 
   render = () =>  (
