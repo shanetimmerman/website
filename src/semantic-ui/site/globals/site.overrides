@@ -184,3 +184,19 @@ a.ui.label.corner .icon {
   font-size: 48px;
 }
 
+/* .ui.image.carouselImage {
+  max-height: 90vh;
+} */
+
+.ui.image.carouselImage {
+  width: auto;
+  max-height: 90vh;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide.selected {
+  background: #000;
+}
