@@ -1,11 +1,20 @@
 import React from 'react'
 
-import { Header, Container } from 'semantic-ui-react'
+import { Header, Container, Image } from 'semantic-ui-react'
+const map = require('./assets/babybox_images/map.png')
 
 
 function Recursion() {
   return (
     <Container textAlign='center'>
+      <p>
+        Designing a mobile health application to solve the absence of prenatal 
+        health services in the middle of the united states. The application is
+        paired with an at-home testing kit to provide comprehensive prenatal
+        from the comfort of one's own home.
+      </p>
+      <Image src={map} />
+    <p className='imageSource'>Image from <a href='https://www.marchofdimes.org/materials/2020-Maternity-Care-Report-eng.pdf' target='_' >https://www.marchofdimes.org/materials/2020-Maternity-Care-Report-eng.pdf</a></p>
       <Header as='h2'>Wireframing currently in progress</Header>
       <Header as='h3'>Prototype</Header>
       <Container 
