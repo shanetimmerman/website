@@ -15,6 +15,26 @@ function Recursion() {
       </p>
       <Image src={map} />
     <p className='imageSource'>Image from <a href='https://www.marchofdimes.org/materials/2020-Maternity-Care-Report-eng.pdf' target='_' >https://www.marchofdimes.org/materials/2020-Maternity-Care-Report-eng.pdf</a></p>
+     <Header as='h2'>Slide Deck</Header>
+     <Header as='h5'>(Contains NABC, ideation, etc.)</Header>
+    <Container
+        style={{
+          position: 'relative',
+          width:'80%',
+          paddingTop: '60%',
+          overflow: 'hidden'
+        }}
+      >
+     <iframe style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%'
+        }}
+        src="https://northeastern-my.sharepoint.com/personal/timmerman_sh_northeastern_edu/_layouts/15/Doc.aspx?sourcedoc={09f67932-1620-4825-9b06-5f2a1abd7e00}&amp;action=embedview&amp;wdAr=1.7777777777777777" frameborder="0">
+      </iframe>
+    </Container>
       <Header as='h2'>Wireframing currently in progress</Header>
       <Header as='h3'>Prototype</Header>
       <Container 
