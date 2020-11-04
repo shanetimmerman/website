@@ -4,7 +4,7 @@ import FrequencyItemset from './frequent_itemset'
 import Stutor from './stutor'
 import TrafficForcasting from './traffic_forcasting'
 import Recursion from './recursion'
-import BabyBox from './babybox'
+import BabyBot from './babybot'
 
 export default [
   {
@@ -14,6 +14,13 @@ export default [
     summary: 'MapReduce program to do Frequent Itemset Mining on the 2009 Netflix prize data, using association rules as a proxy for movie recommendation, much like Youtube did in its early days. The algorithm uses an apriori based approach, translated into iterative MapReduce jobs written in Java run in AWS EMR.',
     image: './netflix_icon.jpeg',
     more: <FrequencyItemset />,
+  },
+  {
+    title: 'BabyBot',
+    dates: '2020',
+    summary: 'mHealth approach to prenatal care, providing more autonomy to woman living in "maternity care deserts". This is the partner application for at home testing solution for common prenatal screenings. This is actively being worked on, so please mind the appearance.',
+    image: './babybot.png',
+    more: <BabyBot />
   },
   {
     title: 'Studor',
@@ -30,13 +37,6 @@ export default [
     summary: 'Final project for CS 2950 Introduction to Computer Science Research. Aimed to extend the Diffuse Concurrent Neural Network from (Li et al. 2017) to include weather prediciton data to challange the prior that traffic patterns are a closed system.Project incomplete within the allotted course time. The model was written primarily by liyaguang, with slight modifications to enable weather data ingestion, and was composed in PyTorch.',
     image: './dcrnn_icon.png',
     more: <TrafficForcasting />
-  },
-    {
-    title: 'BabyBox',
-    dates: '2020',
-    summary: 'mHealth approach to prenatal care, providing more autonomy to woman living in "maternity care deserts". This is the partner application for at home testing solution for common prenatal screenings. This is actively being worked on, so please mind the appearance.',
-    image: './babybox.png',
-    more: <BabyBox />
   },
   {
     title: 'My Personal Website',
