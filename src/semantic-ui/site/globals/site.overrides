@@ -22,14 +22,6 @@ div.modal > div.container {
   margin-bottom: 20px;
 }
 
-/* .background {
-  color: #999999;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -100;
-} */
-
 .ui.top.attached.menu {
   margin-bottom: 20px;
   z-index: 100;
@@ -199,4 +191,8 @@ a.ui.label.corner .icon {
 
 .slide.selected {
   background: #000;
+}
+
+.imageSource {
+  font-size: 13px;
 }

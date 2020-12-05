@@ -7,6 +7,13 @@ import Recursion from './recursion'
 import BabyBot from './babybot'
 
 export default [
+ {
+    title: 'BabyBot',
+    dates: '2020',
+    summary: 'mHealth approach to prenatal care, providing more autonomy to woman living in "maternity care deserts". This is the partner application for at home testing solution for common prenatal screenings. This is actively being worked on, so please mind the appearance.',
+    image: './babybot.png',
+    more: <BabyBot />
+  },
   {
     title: 'Frequency Itemset Mining Netflix Recommendations',
     git: 'https://github.com/shanetimmerman/apriori-frequent-itemset-mining',
@@ -14,13 +21,6 @@ export default [
     summary: 'MapReduce program to do Frequent Itemset Mining on the 2009 Netflix prize data, using association rules as a proxy for movie recommendation, much like Youtube did in its early days. The algorithm uses an apriori based approach, translated into iterative MapReduce jobs written in Java run in AWS EMR.',
     image: './netflix_icon.jpeg',
     more: <FrequencyItemset />,
-  },
-  {
-    title: 'BabyBot',
-    dates: '2020',
-    summary: 'mHealth approach to prenatal care, providing more autonomy to woman living in "maternity care deserts". This is the partner application for at home testing solution for common prenatal screenings. This is actively being worked on, so please mind the appearance.',
-    image: './babybot.png',
-    more: <BabyBot />
   },
   {
     title: 'Studor',
