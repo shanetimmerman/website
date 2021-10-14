@@ -117,9 +117,13 @@ div.modal > div.container {
   gap: 20px 15px;
 }
 
+.homeLinkMargin {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
 .myLink {
   color: black;
-  margin: 0 0 20px 20px;
 }
 
 .myLink * {

@@ -9,9 +9,7 @@ import Signature from './signature_svg'
 
 let navBar = [
   { name: 'ABOUT', key:'home', as:Link, to:'/'},
-  { name: 'PROJECTS', key:'projects', as:Link, to:'/projects'},
-  { name: 'RESUME', key:'resume', as:Link, to:'/resume'},
-  { name: 'GALLERY', key:'gallery', as:Link, to:'/gallery'}
+  { name: 'GALLERY', key:'gallery', as:Link, to:'/gallery'},
 ]
 
 function NavMenu() {

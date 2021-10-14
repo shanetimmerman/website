@@ -6,9 +6,8 @@ import {
 } from 'react-router-dom';
 import { Sticky, } from 'semantic-ui-react'
 
-import Resume from './resume/index.js'
 import Home from './home/index.js'
-import Projects from './projects/index.js'
+// import Projects from './projects/index.js'
 import Gallery from './gallery/index.js'
 import NavMenu from './nav_menu/index.js'
 
@@ -23,12 +22,6 @@ class WebRouter extends React.Component {
             <NavMenu />
           </Sticky>
           <Switch>
-            <Route path='/resume'>
-              <Resume />
-            </Route>
-            <Route path='/projects'>
-              <Projects />
-            </Route>
             <Route path='/gallery/'>
               <Gallery />
             </Route>

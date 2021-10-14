@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import PageContainer from '../components/page_container'
 import Gallery from 'react-photo-gallery';
@@ -11,66 +11,60 @@ const API_KEY = process.env.REACT_APP_IMGUR_CLIENT_ID
 
 const ALBUM_ID = '40VLGap'
 
-class Pics extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      photos: [{
-        src: 'https://imgur.com/Lkbtiqo',
-        height: 360,
-        width: 540,
-      }],
-      currentImage: 0,
-      viewerOpen: false,
-    }
-  }
+const Pics = () => {
+  const [photos, setPhotos] = useState([{
+    src: 'https://imgur.com/Lkbtiqo',
+    height: 360,
+    width: 540,
+  }])
+  const [viewerOpen, setViewerOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0)
 
-  componentDidMount() {
-    fetch(
-      `https://api.imgur.com/3/album/${ALBUM_ID}/images`,
-      {
-        headers: new Headers({
-          'Authorization': `Client-ID ${API_KEY}`,
-        })
-      }
-    ).then(response => response.json())
-    .then(data => {
-      const photos = data.data.map(photo => (
+  useEffect(() => {
+    const getPhotos = async () => {
+      const response = await fetch(
+        `https://api.imgur.com/3/album/${ALBUM_ID}/images`,
+        {
+          headers: new Headers({
+            'Authorization': `Client-ID ${API_KEY}`,
+          })
+        }
+      );
+      const photos = response.json().data.map(photo => (
         { src: photo.link, height: photo.height, width: photo.width }
       ));
-      this.setState({ photos: photos })
-    })
+      setPhotos( photos )
+    }
+    getPhotos()
+  }, [])
+
+  const handleOpenLightbox = (_, { index }) => {
+    setViewerOpen(true)
+    setCurrentImage(index)
   }
 
-  openLightbox(event, { photo, index }) {
-    this.setState({ currentImage: index, viewerOpen: true });
+  const handleCloseLightbox = () => {
+    setViewerOpen(false)
+    setCurrentImage(0)
   }
 
-  closeLightbox() {
-    this.setState({ currentImage: 0, viewerOpen: false });
-  }
-
-  render() {
-    return (
-      <div>
-        <PageContainer textAlign='center'>
-          <Gallery photos={this.state.photos} direction={'column'} onClick={(event, { photo, index }) => (
-            this.setState({ currentImage: index, viewerOpen: true })
-          )} />  
-        </PageContainer>
-        <Modal className='carouselModal' open={ this.state.viewerOpen } 
-          onClose={() => this.setState({ viewerOpen: false, currentImage: 0})} >
-            <Carousel selectedItem={this.state.currentImage} 
-                showIndicators={false} infiniteLoop={false} dynamicHeight={true}
-                showThumbs={false} >
-              {this.state.photos.map(img => (
-                  <Image src={img.src} className='carouselImage' />
-              ))}
-            </Carousel>
-        </Modal>
-      </div>
-    )
-  }  
+  return (
+    <React.Fragment>
+      <PageContainer textAlign='center'>
+        <Gallery photos={photos} direction={'column'} onClick={handleOpenLightbox} />  
+      </PageContainer>
+      <Modal className='carouselModal' open={ viewerOpen } 
+        onClose={handleCloseLightbox} >
+          <Carousel selectedItem={currentImage} 
+              showIndicators={false} infiniteLoop={false} dynamicHeight={true}
+              showThumbs={false} >
+            {photos.map(({src}) => (
+              <Image src={src} className='carouselImage' />
+            ))}
+          </Carousel>
+      </Modal>
+    </React.Fragment>
+  )
 }
 
 export default Pics
