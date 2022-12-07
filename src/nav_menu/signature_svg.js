@@ -1,10 +1,12 @@
-import React, {} from 'react';
+import React, { useEffect } from 'react';
 import animejs from 'animejs';
 import { Link } from 'react-router-dom'
 import {ReactComponent as SignatureSVG} from './adobe-test.svg';
 
-class Signature extends React.Component {
-  componentDidMount = () => {
+
+
+const Signature = () => {
+  const animate = () => {
     animejs({
       targets: '.cls-1',
       strokeDashoffset: [animejs.setDashoffset, 0],
@@ -20,9 +22,11 @@ class Signature extends React.Component {
       delay: animejs.stagger(100, { start: 1200 }),
     })
   }
+  
+  useEffect(animate, [])
 
-  render = () =>  (
-    <Link to='/'>
+  return (
+    <Link to='/' onMouseEnter={animate}>
       <SignatureSVG />
     </Link>
   )

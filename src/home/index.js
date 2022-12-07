@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Grid, Image, Icon } from 'semantic-ui-react';
 
-import profilePhoto from './assets/thats me.jpg'
+import profilePhoto from './assets/thats_me.jpg'
 
 import PageContainer from '../components/page_container'
 
@@ -16,26 +16,17 @@ const Home = () => (
           <Grid.Column textAlign='justified'>
             <h2 className='epilogueLight'> Hey there friend</h2>
             <p>
-              My name is Shane Timmerman. I work for Twitter.com building 
-              out the {' '}
-              <a className='myLink' href='https://developer.twitter.com/en' target='_blank' rel='noopener noreferrer'>
-                <p class='myLinkText'>developer portal</p>
-              </a>!
-              I'm interested in exploring how 
-              software can help enable people. Whether it be increasing 
-              access to healthcare information, allowing people to digest 
-              data more efficiently, or really just being able to so 
-              anything they otherwise couldn't.
+              My name is Shane Timmerman, former an web developer @ the bird company.
               <br />
               <br />
               I am a hot beverage enthusiast, amatuer breadbaker, 
               and resident of beautiful San Francisco California.
               <br />
               <br />
-              You can also find me on any of the places here: 
+              You can also find me on any of the places here, but I'm not very active on any: 
             </p>
             <div className='homeLinkMargin'>
-              <a className='myLink' href='https://twitter.com/merman_tim' target='_blank' rel='noopener noreferrer'>
+              <a className='myLink' href='https://twitter.com/shametimmerman' target='_blank' rel='noopener noreferrer'>
                 <Icon name='twitter square' size='large'  />
                 <p className='myLinkText'>
                   twitter

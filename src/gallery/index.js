@@ -6,6 +6,7 @@ import Gallery from 'react-photo-gallery';
 import { Carousel } from 'react-responsive-carousel';
 import { Modal, Image } from 'semantic-ui-react'; 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import Photos from './photos.json'
 
 const API_KEY = process.env.REACT_APP_IMGUR_CLIENT_ID
 
@@ -18,10 +19,11 @@ const Pics = () => {
     width: 540,
   }])
   const [viewerOpen, setViewerOpen] = useState(false);
-  const [currentImage, setCurrentImage] = useState(0)
+  const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
     const getPhotos = async () => {
+      console.log(`https://api.imgur.com/3/album/${ALBUM_ID}/images`)
       const response = await fetch(
         `https://api.imgur.com/3/album/${ALBUM_ID}/images`,
         {
@@ -30,9 +32,16 @@ const Pics = () => {
           })
         }
       );
-      const photos = response.json().data.map(photo => (
-        { src: photo.link, height: photo.height, width: photo.width }
-      ));
+      let photos;
+      try {
+        photos = response.json().data.map(photo => (
+          { src: photo.link, height: photo.height, width: photo.width }
+        ));
+      } catch {
+        photos = Photos.data.map(photo => (
+          { src: photo.link, height: photo.height, width: photo.width }
+        ))
+      }
       setPhotos( photos )
     }
     getPhotos()
